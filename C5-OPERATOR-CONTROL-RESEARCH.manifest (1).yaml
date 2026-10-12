@@ -1,0 +1,23 @@
+artifact_id: C5-OPERATOR-CONTROL-RESEARCH-v4
+filename: C5-OPERATOR-CONTROL-RESEARCH.md
+cloud: C5
+wave: cloud-evolution-sprint
+
+system_scope: ai_engineering_os
+repository_target: none
+execution_target: deliverable_output
+
+task_id: research-sprint-c5-operator-control-final-correction-v4
+
+status: DESIGNED
+implementation_status: NOT_IMPLEMENTED
+evidence_status: PARTIAL
+
+created_utc: 2026-09-21T09:05:58Z
+
+supersedes:
+  - C5-OPERATOR-CONTROL-RESEARCH-v3
+
+source_count: 7
+
+report_sha256: e70ea36bcab13b1abf76dbc386a82ca114a8c86c66f689d30224f1de71c9e1a8

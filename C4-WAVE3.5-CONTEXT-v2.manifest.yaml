@@ -1,0 +1,54 @@
+artifact_id: fa5a9059-2a29-46e0-9e5e-e93385398aab
+cloud: C4
+wave: "3.5"
+repo_target: kkbb22/ARGON-HEALTH
+task_id: WAVE3.5-C4-CONTEXT-v2-CORRECTION
+status: DESIGNED
+implementation_status: NOT_APPLICABLE
+evidence_status: PARTIAL
+evidence_status_breakdown:
+  bcma: EXTERNAL_TERMINOLOGY          # zero matches, related-but-distinct concept exists elsewhere (Lab, cited)
+  jordan_empi: EXTERNAL_TERMINOLOGY   # zero matches anywhere
+  clinical_note_immutability: PARTIAL # rule confirmed with exact lines; term itself is external label
+  lis_delta_checks: PARTIAL           # term + logging requirement confirmed; mechanism not specified
+  domain_count_40: CONFIRMED          # clean 12+28 heading count, no pairing ambiguity
+  workflow_count_30: DOCUMENTATION_ONLY  # repository's own claim, corroborated 9x cross-reference; heading/body count independently proves 27, not 30
+  depth_model_analytical: CONFIRMED
+  semantic_graph: UNCHANGED           # retained from v1 verbatim, not re-verified as "new" since nothing changed
+supersedes:
+  artifact_id: 91cb51e4-5256-43aa-834d-1d7c0e97032f
+  filename: C4-WAVE3.5-ARGON-CONTEXT-MODEL.md
+  sha256: a845053fd43af7a5642ae5287b2a1c762a83446867de8652f6dceae071358fe9
+  reason: "v1 asserted the 4 clinical terms and the 30-workflow figure at summary/prior-session level; v2 re-verifies each with exact path:line citations and surfaces a new evidence gap (27 heading-provable vs 30 claimed workflows) that v1 did not flag"
+filename: C4-WAVE3.5-CONTEXT-v2.md
+sha256: 22ca9931e0799e3285ac802f65677bc0859790acb9081b65addc340477f60a90
+created_at_utc: "2026-09-20T12:56:52Z"
+verified_repo_head: 3520d70946f6623875c6f7d6ea47ef40f5bcc316
+head_matches_ground_truth: true
+source_refs:
+  - docs/master/03-MASTER-DOMAIN-MAP.md (lines 15, 169, 172, 175, 223, 338, 519, headings 40-933)
+  - docs/master/05-MASTER-WORKFLOW-MAP.md (lines 17-18, 41-624, 626)
+  - docs/master/20-MASTER-IMPLEMENTATION-ROADMAP.md (line 104, 212)
+  - docs/governance/ARCHITECTURE-LINT-RULES.md (line 23)
+  - docs/governance/TRACEABILITY-MATRIX.md (line 97)
+  - docs/governance/FINAL-GATE.md (line 57)
+  - docs/governance/ARCHITECTURE-FREEZE.md (line 8)
+  - docs/audit/FINAL-NORMALIZATION-REPORT.md (line 122)
+  - docs/audit/CONTINUOUS-IMPROVEMENT-FINAL-REPORT.md (line 99)
+  - docs/audit/FINAL-IMPLEMENTATION-READINESS.md (line 12)
+  - docs/MASTER-ARGON-OPERATIONAL-FLOWS.md (lines 80, 511, 793)
+  - docs/MASTER-ARGON-BLUEPRINT.md (lines 70, 83, 236)
+dependencies:
+  - cloud: C1
+    needs: "decide whether the 27-vs-30 workflow evidence gap needs escalation or is accepted as an intentional editorial convention"
+    status: UNKNOWN
+  - cloud: C7
+    needs: "independently re-check the workflow pairing claim; C4 could not mechanically resolve which 3 slots pair"
+    status: UNKNOWN
+contradictions:
+  - finding: "05-MASTER-WORKFLOW-MAP.md claims 12 Tier-1 slots cover 15 named workflows via 'natural pairings', but every one of the 12 Tier-1 headings contains exactly one Trigger block (verified by direct grep) — no structural evidence of pairing found"
+    classification: EVIDENCE_GAP   # per C7's own classification vocabulary from the prior mission; not asserting CONFIRMED INCONSISTENCY since the claim is corroborated 9x elsewhere and may be an intentional editorial convention I simply can't re-derive
+open_questions:
+  - "Which specific 3 of the 12 Tier-1 workflow slots constitute the 'natural pairings' referenced in 05's Scope and DoD sections?"
+  - "Does 'Jordan EMPI' refer to a real external system outside this repository's visibility?"
+next_owner: C1

@@ -1,0 +1,22 @@
+artifact_id: 9a6acd86-d868-4019-aa26-6a2755e64018
+filename: C4-SURGICAL-ENGINEERING-PROTOCOL.md
+cloud: C4
+wave: cloud-evolution-sprint
+
+system_scope: ai_engineering_os
+repository_target: none
+execution_target: deliverable_output
+
+task_id: C4-SURGICAL-ENGINEERING-PROTOCOL-FINAL
+status: DESIGNED
+implementation_status: NOT_IMPLEMENTED
+evidence_status: PARTIAL   # source-backed patterns and corrections are evidenced; Patterns F and H remain NEEDS EXPERIMENT by design; Experiments 1-7 remain defined, not executed; no change from the pre-packaging status — packaging does not alter evidence_status
+
+created_utc: "2026-09-21T09:07:43Z"
+
+supersedes:
+  - 053d9279-cebf-4ad5-8768-3238547fa93f   # direct previous revision only (Correction Pass v1); earlier revisions are not re-listed, per the chain already established in that revision's own manifest
+
+source_count: 10   # unchanged by packaging — no new source opened
+
+report_sha256: 441007bcbdce318b212d7f166fb344e18e72d92e5d0090f75718b9bc9ec01651

@@ -1,0 +1,48 @@
+artifact_id: C5-WAVE3.5-OPERATOR-v2
+cloud: C5
+wave: "3.5"
+repo_target: none   # AI Engineering OS design-phase artifact; no code repo exists.
+task_id: wave3.5-c5-operator-alignment-v2
+status: DESIGNED
+implementation_status: PROPOSED
+evidence_status: EVIDENCE_MISSING   # verification requested against C1/C2/C3 canonical
+                                     # models, which do not exist in this session
+source_refs:
+  - path: /mnt/user-data/outputs/C5-WAVE3.5-OPERATOR-CONTROL-SPEC.md
+    role: design being verified
+  - path: /mnt/user-data/outputs/C5-WAVE3.5-OPERATOR-CONTROL-SPEC.manifest.yaml
+    role: prior manifest; dependency list carried forward
+dependencies:
+  - owner: C2
+    item: "Whether policy is a distinct object from enforcement (items 1, 2)"
+  - owner: C1
+    item: "Whether backend actually refuses a UI-originated ALLOW override on REQUIRE HUMAN APPROVAL (item 2)"
+  - owner: C1
+    item: "Whether backend has any override path for DENY (item 3)"
+  - owner: C1
+    item: "Plan/Act gate: field to carry approved_plan_ref (content hash) (item 4) — NEW, specific"
+  - owner: C3
+    item: "Plan/Act object model: same approved_plan_ref field (item 4) — NEW, specific"
+  - owner: C3
+    item: "Repository Snapshot timestamp field existence (item 5)"
+  - owner: C1
+    item: "Task Router reason-string emission (item 6)"
+  - owner: C3
+    item: "Evidence Record actual field names for lifecycle_status / evidence_class (item 8)"
+  - owner: C3
+    item: "Evidence-write vs STOP race condition resolution (item 9) — NEW"
+contradictions: []   # No C1/C2/C3 canonical artifact exists to contradict against.
+open_questions:
+  - "Same 5 questions from v1 manifest, all still open (see prior manifest)."
+  - "NEW: does Plan/Act gate/object model support approved_plan_ref binding?"
+  - "NEW: what wins if an Evidence write and a STOP race each other?"
+findings_this_pass:
+  - id: 4
+    type: gap_closed
+    description: "Approval-to-exact-plan binding was underspecified in v1; now requires approved_plan_ref"
+  - id: 9
+    type: new_edge_case
+    description: "Evidence write vs STOP race condition not previously named"
+next_owner: C1_and_C3   # items 4 and 9 need direct answers before C7 input integrity
+                        # check can treat this track as settled; C7 still blocked overall
+                        # pending actual C1/C2/C3/C4/C6 artifacts, unchanged from v1.

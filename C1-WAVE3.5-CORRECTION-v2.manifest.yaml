@@ -1,0 +1,35 @@
+artifact_id: c1-wave3.5-correction-v2
+cloud: C1
+wave: "3.5-correction"
+system_scope: ai_engineering_os
+repository_target: argon-health
+execution_target: deliverable_output
+task_id: wave3.5-c1-surgical-correction
+status: DESIGNED
+implementation_status: NOT_IMPLEMENTED
+evidence_status: DOCUMENTATION_ONLY
+source_refs:
+  - C1-WAVE3.5-CANONICAL-ARCHITECTURE.md
+  - C3-WAVE3.5-AI-OS-KNOWLEDGE-MODEL.md
+  - C2-WAVE3.5-AI-OS-THREAT-MODEL.md
+  - C5-WAVE3.5-OPERATOR-CONTROL-SPEC.md
+dependencies:
+  - "C3 must edit its canonical file to add the schema changes specified here (not yet done)"
+  - "C2 must add the Approval Record hard-gate to its Policy/Enforcement/Audit table (not yet done)"
+  - "C5 must revise Current-State/Completion-Display sections (not yet done)"
+supersedes:
+  - "C3-WAVE3.5-AI-OS-KNOWLEDGE-MODEL.md item 2 (Context Packet/Projection merge)"
+  - "C1-WAVE3.5-CANONICAL-ARCHITECTURE.md Deliverable 4 (informal routing note)"
+contradictions: []
+open_questions:
+  - "C6 direct multi-Cloud Handoff access — routed to C6"
+  - "15-minute staleness threshold — proposal, needs human confirmation"
+  - "Approval Record.scope structured format — routed to C2+C3"
+  - "PRODUCTION lifecycle_status applicability to AI-OS-only claims — requires human decision"
+next_owner: C3   # for the schema edits this correction depends on
+artifact_hash_sha256: 2a52518699edbcf30ae4b76c9f780a748eab74a4f399c74644f9c9d388776a1a
+filename: C1-WAVE3.5-CORRECTION-v2.md
+creation_timestamp_utc: "2026-09-20T12:53:41Z"
+staleness_check_applied: true
+staleness_check_result: "HEAD 3520d70946f6623875c6f7d6ea47ef40f5bcc316 re-verified live against origin at creation time — unchanged, no drift, despite real elapsed session time (Trigger 1+2 from this document's own §7 self-applied)"
+ARTIFACT_READY_FOR_TRANSFER: true

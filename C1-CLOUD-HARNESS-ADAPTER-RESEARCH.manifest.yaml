@@ -1,0 +1,54 @@
+artifact_id: c1-cloud-evolution-harness-v4-final
+filename: C1-CLOUD-HARNESS-ADAPTER-RESEARCH.md
+cloud: C1
+wave: cloud-evolution-sprint
+
+system_scope: ai_engineering_os
+repository_target: none
+execution_target: deliverable_output
+
+status: DESIGNED
+implementation_status: NOT_IMPLEMENTED
+evidence_status: PARTIAL
+
+created_utc: "2026-09-21T09:30:00Z"
+
+supersedes:
+  - artifact_id: c1-cloud-evolution-harness-v3-corrected
+    sha256: 0c41e57fb23d65c95aa0db8488203a0c3199f7fda748b46a49943ab6800d994e
+    reason: >
+      Benchmark-number correction (removed unconfirmable +10.7pp/Lite figure,
+      replaced with source-verified 1.96%->12.47% full-SWE-bench figure;
+      flagged one unresolved cross-source conflict rather than picking a
+      number); Kernel section fully restructured against all ten required
+      responsibility items plus explicit Model/Adapter/Kernel/Runtime/Tools
+      stack; precise per-topic source-coverage table replacing a general
+      coverage-gap note (OpenHands confirmed NOT STUDIED); checkpoint
+      semantics answered via six explicit questions; Plan/Act experiment
+      expanded from four to five mutation vectors (added indirect-mutation-
+      through-another-tool).
+  - artifact_id: c1-cloud-evolution-harness-v2
+    sha256: fffbc07ae663cad5f58ff01e43d67fb7079f633138277ed17c529972720a15aa
+    reason: "superseded by v3-corrected, then by this version"
+
+source_count: 9
+sources:
+  - "Claude Code: Create custom subagents (code.claude.com/docs/en/sub-agents)"
+  - "Cline via fast.io: What Is Cline? (fast.io/resources/what-is-cline.md)"
+  - "Cline via fast.io: Cline Security Model and Safe Agent Practices (fast.io/resources/cline-security-guide.md)"
+  - "SWE-agent NeurIPS 2024 paper (via noze.it and object.cloud.sdsc.edu reproductions)"
+  - "Aider: Separating code reasoning and editing (aider.chat/2024/09/26/architect.html)"
+  - "Aider: R1+Sonnet set SOTA on aider's polyglot benchmark (aider.chat/2025/01/24/r1-sonnet.html)"
+  - "DSPy: dspy.GEPA Reflective Prompt Optimizer (dspy.ai/api/optimizers/GEPA/)"
+  - "swebench.com official project/leaderboard page (existence check for cross-model entries, benchmark-number re-verification)"
+  - "github.com/davila7/claude_subagents + 3 anthropics/claude-code GitHub issues (#80036, #61993, #68619) -- delegation-depth re-verification"
+
+c6_c7_cloud_evolution_artifacts_exist: false
+note: >
+  No C7-CLOUD-EVOLUTION-FINAL-AUDIT of any version exists anywhere in this
+  conversation. All corrections across all passes were applied directly
+  from each correction pass's own inline finding descriptions, checked
+  against this artifact's actual prior content, never against an
+  independent audit document.
+
+report_sha256: 24e8cdb1cb8a088f146ff97265a484a329544b6a13d3bdfafea00de9f5dc688f

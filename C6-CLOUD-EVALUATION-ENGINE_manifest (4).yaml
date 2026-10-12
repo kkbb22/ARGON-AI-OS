@@ -1,0 +1,44 @@
+artifact_id: c6-cloud-evaluation-engine-v3
+filename: C6-CLOUD-EVALUATION-ENGINE.md
+cloud: C6
+wave: cloud-evolution-sprint
+
+system_scope: ai_engineering_os
+repository_target: none
+execution_target: deliverable_output
+
+task_id: c6-evaluation-learning-engine-final-packaging
+
+status: DESIGNED
+implementation_status: NOT_IMPLEMENTED
+evidence_status: PARTIAL   # 7 external sources independently checked and cited
+                           # (Tier A/B per source hierarchy); all ARGON-side
+                           # mechanisms remain PROPOSAL-only, not implemented
+                           # or independently verified
+
+created_utc: "2026-10-05T04:03:13Z"   # real value, per `date -u`, taken
+                                       # immediately after final packaging
+                                       # consolidation (duplicate v2/v3
+                                       # historical sections merged into one
+                                       # canonical final section; no research
+                                       # content changed)
+
+supersedes:
+  - artifact_id: c6-cloud-evaluation-engine-v2
+    reason: "Final packaging pass: consolidated duplicate v2/v3 Finding
+             Matrices, dispute statements, and self-check tables into one
+             canonical final section. No research content altered
+             (content_change: NONE). Hash recomputed from final packaged
+             bytes per the packaging contract."
+  - artifact_id: c6-cloud-evaluation-engine-v1
+    reason: "Original research-sprint draft, corrected in v2 per
+             C6-X5/P2/P5/P6/METRICS, then packaged into final canonical
+             form here."
+
+source_count: 7
+
+report_sha256: a0d762ad472f0e5fb6a891495a943ca808ac642ab5b7d3b9eab42fd0e237946a
+  # computed via `sha256sum C6-CLOUD-EVALUATION-ENGINE.md` on the final
+  # packaged file, after consolidation edits and before any further change.
+  # This manifest is the sole canonical location for this hash; the .md
+  # itself contains only `report_sha256: recorded_in_manifest`.

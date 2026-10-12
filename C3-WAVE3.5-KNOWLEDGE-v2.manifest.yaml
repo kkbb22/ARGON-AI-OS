@@ -1,0 +1,65 @@
+artifact_id: C3-WAVE3.5-KNOWLEDGE-v2
+cloud: C3
+wave: "3.5"
+repo_target: ai-engineering-os   # using the newly-widened enum this document itself defines
+task_id: WAVE3.5-C3-KNOWLEDGE-MODEL-v2
+supersedes:
+  - artifact_id: C3-WAVE3.5-AI-OS-KNOWLEDGE-MODEL
+    sha256: "32114b738b9fa36cb48235d4c80de49de69890f3ca4ad74f956c5c34e24333b7"
+  - artifact_id: C3-WAVE3.5-AI-OS-KNOWLEDGE-MODEL.manifest
+    sha256: "083c6b79afdbc336f65928ee0957353eb4346d00cf349921d556027b1aaf656f"
+status: proposed
+implementation_status: designed
+evidence_status: mixed
+evidence_breakdown:
+  confirmed:
+    - "repo_target 3-value enum is grounded in this mission's own Section 0 text, not invented"
+  attempted_inconclusive:
+    - "checked api.github.com for an existing AI-Engineering-OS repository — rate-limited, no answer obtained, recorded as UNKNOWN"
+  documentation_only:
+    - "necessity of the Approval object rests on repeated mission-document instruction, not an independently produced C1/C2 Cloud Result"
+  proposal_only:
+    - "Approval/Execution Authorization object schema"
+    - "chain_resolution_check / content_review as Verification Record method values"
+  unresolved:
+    - "C6 vs C7 verification-authority conflict (3 options presented, none chosen)"
+    - "Claim de-duplication"
+    - "Task Packet field-refinement policy"
+    - "Decision Reference Legacy-repo coverage"
+    - "lifecycle_status transitions other than ->verified remain ungated"
+source_refs:
+  - "This session's Wave-3.5 v1 mission document, Section 0 (repo_target evidence)"
+  - "This session's C1/C2/C5 Wave-3.5 v1 briefs (Approval-object necessity evidence, informational tier)"
+  - "docs/master/19-MASTER-ARCHITECTURAL-DECISIONS.md, docs/governance/ARGON-SOURCE-OF-TRUTH.md (ARGON-HEALTH repo, commit 3520d70)"
+  - "Prior C3 artifacts, hashes listed under supersedes above"
+dependencies:
+  - to: C1
+    needs: "ratify repo_target=ai-engineering-os being actually set by the Task Router for OS-design tasks"
+    blocking: false
+  - to: C1
+    needs: "define the Plan/Action object that Approval.action_ref currently only references informally"
+    blocking: false
+  - to: C6
+    needs: "implement chain_resolution_check as an actual validator; none of this is coded or executed"
+    blocking: true
+  - to: C1
+    needs: "choose one of the 3 options in section 8 for C6/C7 verification-authority conflicts"
+    blocking: false
+contradictions_resolved_this_pass:
+  - "repo_target missing ai-engineering-os value"
+  - "three informal Handoff meanings collapsed into one canonical object"
+  - "Evidence Record could be cited without its Source ever resolving"
+contradictions:
+  - []  # no NEW cross-cloud contradictions found — C3 still has not received actual C2/C4/C5/C6 Wave-3.5 outputs to compare against
+open_questions:
+  - "Does a separate AI-Engineering-OS repository exist? UNKNOWN — check attempted, rate-limited"
+  - "C6 vs C7 verification-authority conflict — options only, unresolved"
+  - "lifecycle_status transitions beyond ->verified remain ungated"
+next_owner: C6
+created_at: "2026-09-20T12:55:05Z"   # corrected — see note below
+# NOTE: an earlier draft of this manifest carried "2026-09-19T23:26:00Z" here,
+# estimated rather than checked. Running `date -u` at hash-time (the actual
+# discipline this whole document argues for) showed real elapsed time had
+# passed since the prior artifact's timestamp. Corrected before transfer
+# rather than shipped silently — flagging it here instead of hiding it,
+# consistent with this document's own evidence standards.

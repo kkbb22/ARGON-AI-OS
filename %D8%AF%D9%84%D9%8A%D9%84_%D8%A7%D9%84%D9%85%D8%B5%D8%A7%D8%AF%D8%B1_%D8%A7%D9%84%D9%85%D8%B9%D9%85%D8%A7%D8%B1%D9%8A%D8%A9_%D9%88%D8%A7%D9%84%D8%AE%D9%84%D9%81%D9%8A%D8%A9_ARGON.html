@@ -1,0 +1,495 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARGON Health — دليل المصادر المعمارية والخلفية</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#182533;--muted:#5d6b7b;--line:#dbe3ec;--blue:#175a86;--blue2:#e7f2fa;--green:#147d64;--amber:#9a6700;--red:#ab2f2f;--shadow:0 10px 30px rgba(31,56,82,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.75}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.hero{background:linear-gradient(135deg,#0d2b43,#165f7d 65%,#268a87);color:#fff;padding:36px max(22px,calc((100vw - 1180px)/2)) 30px}.hero small{opacity:.8;letter-spacing:.04em}h1{margin:8px 0 12px;font-size:clamp(27px,4vw,43px);line-height:1.25}.hero p{max-width:860px;color:#e3f1f8;font-size:16px}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.badges span{padding:5px 10px;border:1px solid #ffffff55;border-radius:999px;font-size:12px}main{max-width:1180px;margin:auto;padding:24px}.notice{border:1px solid #bdd9ea;background:#f0f8fd;border-radius:14px;padding:16px 18px;margin-bottom:22px}.notice strong{color:#104e74}.summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 24px}.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px;box-shadow:var(--shadow)}.stat b{font-size:25px;display:block;color:var(--blue)}.stat span{font-size:12px;color:var(--muted)}h2{margin:28px 0 10px;font-size:23px}h3{margin:7px 0 8px;font-size:18px;line-height:1.45}.architecture{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.arch{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}.arch h3{color:var(--blue)}.arch p{font-size:14px;color:var(--muted);margin:0}.toolbar{position:sticky;top:0;z-index:10;background:rgba(244,247,251,.96);backdrop-filter:blur(12px);padding:12px 0 10px;border-bottom:1px solid var(--line);margin:20px 0}.searchrow{display:flex;gap:10px}input[type=search]{width:100%;min-width:0;padding:12px 14px;border-radius:11px;border:1px solid #bdcbd9;background:#fff;font:inherit}select{padding:10px;border:1px solid #bdcbd9;border-radius:10px;background:#fff;font:inherit}.filters{display:flex;gap:7px;overflow:auto;padding:10px 0 2px}button.filter{white-space:nowrap;border:1px solid #c6d4e1;background:#fff;padding:7px 10px;border-radius:999px;font:inherit;font-size:12px;cursor:pointer}button.filter.active{background:var(--blue);color:#fff;border-color:var(--blue)}.results{font-size:13px;color:var(--muted);margin:5px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:17px;box-shadow:var(--shadow);min-width:0;display:flex;flex-direction:column}.item.hidden{display:none}.item-top{display:flex;justify-content:space-between;align-items:center;gap:8px}.category{font-size:11px;color:#305d7a;background:var(--blue2);border-radius:6px;padding:3px 7px}.priority{font-weight:bold;font-size:11px;border-radius:6px;padding:2px 7px}.p0{background:#ffe8e8;color:var(--red)}.p1{background:#fff0cf;color:var(--amber)}.p2{background:#e8f5ed;color:var(--green)}.item p{margin:0 0 9px;font-size:14px}.type{font-size:12px;color:var(--muted);margin-top:auto;padding-top:8px}.links{display:flex;gap:14px;flex-wrap:wrap;border-top:1px solid #edf1f5;margin-top:11px;padding-top:10px;font-size:13px;font-weight:bold}details{margin-top:8px;font-size:12px;color:var(--muted)}summary{cursor:pointer;font-weight:bold;color:#4f6172}.workflow{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:14px 0}.flowstep{background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 12px;font-size:13px}.arrow{color:var(--blue);font-weight:bold}table{border-collapse:collapse;width:100%;background:#fff;border-radius:12px;overflow:hidden}th,td{border:1px solid var(--line);padding:10px 12px;text-align:right;vertical-align:top;font-size:13px}th{background:#eaf2f7}.small{font-size:12px;color:var(--muted)}.footer{border-top:1px solid var(--line);padding:24px 0 10px;margin-top:32px;color:var(--muted);font-size:12px}@media(max-width:760px){main{padding:16px}.summary{grid-template-columns:repeat(2,minmax(0,1fr))}.architecture{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.searchrow{flex-direction:column}}@media print{.toolbar{position:static}.item.hidden{display:flex}.filter,.searchrow button{display:none}body{background:#fff}.item,.stat,.arch{box-shadow:none;break-inside:avoid}}
+</style></head><body>
+<header class="hero"><small>ARGON HEALTH · BACKEND RESEARCH MAP · 10 OCT 2026</small><h1>دليل المصادر العالمية لبناء الخلفية الطبية</h1><p>خارطة عملية لمصادر مرجعية موثوقة لبناء منصة صحية عميقة وقابلة للتوسع: نماذج سريرية، بيانات وتكامل، backend Java، أمن، تشغيل، اختبار، تعافٍ، وامتثال. الهدف ليس استعمال كل أداة، بل اختيار أقل مجموعة صحيحة تغطي الحاجة بمستوى يمكن إثباته.</p><div class="badges"><span>73 مصدرًا</span><span>7 فئات</span><span>روابط رسمية ومستودعات</span><span>ملاحظات الترخيص والمخاطر</span><span>بحث وتصفية</span></div></header>
+<main>
+<div class="notice"><strong>قاعدة ذهبية:</strong> هذه قائمة مصادر مختارة وليست تصديقًا تلقائيًا على كل مشروع أو منتج. قيّم كل مستودع من حيث الصيانة، والإصدار، والثغرات، والرخصة، والاعتماديات، وعمق الاختبارات، وقدرة الفريق على تشغيله. لا تدع حجم المعمارية يسبق حاجة عميل حقيقية أو أدلة أداء وأمان.</div>
+<div class="summary"><div class="stat"><b>73</b><span>مصدرًا ومرجعًا أوليًا</span></div><div class="stat"><b>4</b><span>طبقات أساس: مجال وبيانات وتكامل وتشغيل</span></div><div class="stat"><b>P0</b><span>ابدأ بالضروري قبل البنية المتقدمة</span></div><div class="stat"><b>0</b><span>ادعاء بأن الرابط وحده يثبت الامتثال أو الأمان</span></div></div>
+<h2>المعمارية الخلفية المقترحة لـ ARGON</h2>
+<div class="architecture">
+ <div class="arch"><h3>1. نواة Modular Monolith</h3><p>Java + Spring Boot + Spring Modulith. مجالات مستقلة داخل تطبيق مضبوط الحدود، مع اختبار تلقائي يمنع الاعتمادات العشوائية. لا تبدأ بميكروسيرفس لكل مجال دون حاجة مقاسة.</p></div>
+ <div class="arch"><h3>2. مصدر الحقيقة</h3><p>PostgreSQL للبيانات المنظمة والمعاملات، مع مخطط وصلاحيات وتدقيق وإصدارات واضحة. Redis/البحث/التحليلات مشتقات قابلة لإعادة البناء، وليس مصدر حقيقة موازيًا.</p></div>
+ <div class="arch"><h3>3. واجهات وتكامل</h3><p>OpenAPI للـ REST الداخلي، وFHIR R4/R4B على حدود التبادل حسب ملف التنفيذ، وHL7 v2 للموروثات، وDICOM/DICOMweb للصور. العقود والـ profiles والاختبارات جزء من المنتج.</p></div>
+ <div class="arch"><h3>4. هوية وتفويض</h3><p>OIDC/OAuth2 عبر مزود هوية، وصلاحية لكل طلب في الخادم، وعزل tenant، وسياسات قاعدة البيانات كدفاع إضافي، وهوية مستقلة للخدمات، وعمليات break-glass محدودة ومدققة.</p></div>
+ <div class="arch"><h3>5. أحداث موثوقة</h3><p>معاملات + Outbox/سجل نشر، مستهلكون idempotent، retries محدودة، DLQ وتنبيه ومخطط إصدارات للأحداث. أضف وسيط رسائل أو محرك workflow فقط عندما تتطلبه العمليات.</p></div>
+ <div class="arch"><h3>6. تشغيل آمن</h3><p>OpenTelemetry، مؤشرات وتنبيهات، نسخ احتياطي واستعادة مجربة، إدارة أسرار، SBOM وفحص تبعيات وتوقيع إصدارات، واختبارات حمل وتهديدات وتكامل قبل الإطلاق.</p></div>
+</div>
+<h2>رحلة البيانات الأساسية التي يجب أن يدعمها backend</h2>
+<div class="workflow"><span class="flowstep">Identity + Tenant</span><span class="arrow">←</span><span class="flowstep">Patient / MPI / Consent</span><span class="arrow">←</span><span class="flowstep">Encounter / Clinical record</span><span class="arrow">←</span><span class="flowstep">Orders</span><span class="arrow">←</span><span class="flowstep">Lab / Radiology / Pharmacy</span><span class="arrow">←</span><span class="flowstep">Results / Review</span><span class="arrow">←</span><span class="flowstep">Billing / Claims / Payment</span></div>
+<p class="small">كل خطوة تحتاج حالة دورة حياة، وهوية منشأة ومستخدم، وتوقيتًا موثوقًا، ومصدرًا للمعلومة، وسجل تعديل، وسياسة وصول، وسلوك فشل، واختبارات. البيانات السريرية لا تُختزل إلى عدد جداول؛ عمقها يأتي من سلامة المعنى والعلاقات والتاريخ والمصدر والحالات والاستثناءات.</p>
+<h2>مصادر مفهرسة بحسب الفئة</h2>
+<div class="toolbar"><div class="searchrow"><input id="q" type="search" placeholder="ابحث: Patient، FHIR، RLS، أدوية، Outbox، Backup، Security…"><select id="priority"><option value="all">كل الأولويات</option><option value="P0">P0 — أساس لازم</option><option value="P1">P1 — قريبًا</option><option value="P2">P2 — عند الحاجة</option></select></div><div class="filters"><button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="الأمان وسلسلة توريد البرمجيات">الأمان وسلسلة توريد البرمجيات</button><button class="filter" data-filter="الأنظمة الطبية المرجعية">الأنظمة الطبية المرجعية</button><button class="filter" data-filter="الاختبار والتحقق والأداء">الاختبار والتحقق والأداء</button><button class="filter" data-filter="التشغيل والمراقبة والاستمرارية">التشغيل والمراقبة والاستمرارية</button><button class="filter" data-filter="الحوكمة والقانون والسلامة السريرية">الحوكمة والقانون والسلامة السريرية</button><button class="filter" data-filter="المعايير الطبية والبيانات">المعايير الطبية والبيانات</button><button class="filter" data-filter="الهيكل الخلفي والبيانات">الهيكل الخلفي والبيانات</button></div><div class="results" id="count"></div></div>
+<div class="grid" id="list"><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P0" data-search="openmrs core منصة سجلات طبية مفتوحة المصدر؛ ادرس نموذج بيانات المريض، المرضى والزيارات والـ api وكيف تتوسع المنصة عبر الوحدات. الأنظمة الطبية المرجعية المستودع البرمجي لا تنسخ نموذج البيانات كما هو؛ قارن المفاهيم بنطاق argon ومتطلبات دولته.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p0">P0</span></div>
+      <h3>OpenMRS Core</h3><p>منصة سجلات طبية مفتوحة المصدر؛ ادرس نموذج بيانات المريض، المرضى والزيارات والـ API وكيف تتوسع المنصة عبر الوحدات.</p>
+      <div class="type">المستودع البرمجي</div>
+      <div class="links"><a href="https://github.com/openmrs/openmrs-core" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://openmrs.org/demo/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا تنسخ نموذج البيانات كما هو؛ قارن المفاهيم بنطاق ARGON ومتطلبات دولته.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P0" data-search="openmrs 3 frontend core مرجع معماري للواجهة المعيارية والـ micro-frontends والامتدادات والتكوين المشترك، مع ربطها بواجهات backend. الأنظمة الطبية المرجعية المستودع البرمجي مفيد لتعلم حدود الوحدات؛ ليس سببًا لنسخ micro-frontends إن لم يحتجها المنتج.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p0">P0</span></div>
+      <h3>OpenMRS 3 Frontend Core</h3><p>مرجع معماري للواجهة المعيارية والـ micro-frontends والامتدادات والتكوين المشترك، مع ربطها بواجهات backend.</p>
+      <div class="type">المستودع البرمجي</div>
+      <div class="links"><a href="https://github.com/openmrs/openmrs-esm-core" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://openmrs.atlassian.net/wiki/x/IABBHg" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>مفيد لتعلم حدود الوحدات؛ ليس سببًا لنسخ micro-frontends إن لم يحتجها المنتج.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P0" data-search="openmrs rest api وثائق api طبية حقيقية؛ مفيدة لدراسة استعلامات المرضى والزيارات والملاحظات ونسخ الـ api. الأنظمة الطبية المرجعية وثائق رسمية واجهات openmrs الخاصة ليست بديلًا عن fhir للتبادل الخارجي.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p0">P0</span></div>
+      <h3>OpenMRS REST API</h3><p>وثائق API طبية حقيقية؛ مفيدة لدراسة استعلامات المرضى والزيارات والملاحظات ونسخ الـ API.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://rest.openmrs.org/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/openmrs/openmrs-contrib-rest-api-docs" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>واجهات OpenMRS الخاصة ليست بديلًا عن FHIR للتبادل الخارجي.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P1" data-search="bahmni منصة متكاملة نسبيًا لتدفق عمل المستشفيات والعيادات في بيئات الموارد المحدودة؛ ادرس الشاشات والعمليات والربط مع openmrs ومكونات أخرى. الأنظمة الطبية المرجعية المستودعات والموقع راجع كل مستودع ورخصة وإصدار على حدة؛ لا تفترض أن كل المكونات لها الرخصة نفسها.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p1">P1</span></div>
+      <h3>Bahmni</h3><p>منصة متكاملة نسبيًا لتدفق عمل المستشفيات والعيادات في بيئات الموارد المحدودة؛ ادرس الشاشات والعمليات والربط مع OpenMRS ومكونات أخرى.</p>
+      <div class="type">المستودعات والموقع</div>
+      <div class="links"><a href="https://github.com/Bahmni" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.bahmni.org/screenshots" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>راجع كل مستودع ورخصة وإصدار على حدة؛ لا تفترض أن كل المكونات لها الرخصة نفسها.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P0" data-search="openemr نظام عيادات مفتوح المصدر غني بسير العمل الطبي والإداري؛ مصدر جيد لدراسة api وfhir وoauth والصلاحيات والتقارير. الأنظمة الطبية المرجعية المستودع البرمجي الرخصة gpl v3؛ افهم أثرها القانوني قبل دمج الكود أو إعادة توزيعه.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p0">P0</span></div>
+      <h3>OpenEMR</h3><p>نظام عيادات مفتوح المصدر غني بسير العمل الطبي والإداري؛ مصدر جيد لدراسة API وFHIR وOAuth والصلاحيات والتقارير.</p>
+      <div class="type">المستودع البرمجي</div>
+      <div class="links"><a href="https://github.com/openemr/openemr" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/openemr/openemr/blob/master/Documentation/api/README.md" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>الرخصة GPL v3؛ افهم أثرها القانوني قبل دمج الكود أو إعادة توزيعه.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P0" data-search="medplum منصة مطورين صحية بمستودع بيانات fhir وsdk وreact ui components وواجهات هوية؛ مفيدة لاختبار شكل خدمات fhir. الأنظمة الطبية المرجعية المستودع والوثائق الرخصة المعلنة للمستودع apache-2.0؛ افحص تراخيص الحزم والتبعيات المنفصلة.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p0">P0</span></div>
+      <h3>Medplum</h3><p>منصة مطورين صحية بمستودع بيانات FHIR وSDK وReact UI components وواجهات هوية؛ مفيدة لاختبار شكل خدمات FHIR.</p>
+      <div class="type">المستودع والوثائق</div>
+      <div class="links"><a href="https://github.com/medplum/medplum" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.medplum.com/docs" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>الرخصة المعلنة للمستودع Apache-2.0؛ افحص تراخيص الحزم والتبعيات المنفصلة.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P0" data-search="hapi fhir مرجع java لتطبيقات fhir وخادم fhir؛ ملائم لدراسة validation وsearch وpersistence والتوافق في بيئة java. الأنظمة الطبية المرجعية المستودع والوثائق كونه fhir server لا يجعله تلقائيًا نواة السجل السريري أو يحسم نموذج البيانات الداخلي.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p0">P0</span></div>
+      <h3>HAPI FHIR</h3><p>مرجع Java لتطبيقات FHIR وخادم FHIR؛ ملائم لدراسة validation وsearch وpersistence والتوافق في بيئة Java.</p>
+      <div class="type">المستودع والوثائق</div>
+      <div class="links"><a href="https://github.com/hapifhir/hapi-fhir" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://hapifhir.io/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>كونه FHIR server لا يجعله تلقائيًا نواة السجل السريري أو يحسم نموذج البيانات الداخلي.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P1" data-search="openelis global نظام معلومات مختبر مفتوح المصدر؛ ادرس دورة الطلب والعينة والنتيجة وسير عمل المختبر بدل اختراع هذه الحالات من الصفر. الأنظمة الطبية المرجعية المستودع والموقع تحقق من توافق أجهزة التحليل محليًا، وعمق الوظائف، والرخص والتكاملات قبل اختيار أي مكون.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p1">P1</span></div>
+      <h3>OpenELIS Global</h3><p>نظام معلومات مختبر مفتوح المصدر؛ ادرس دورة الطلب والعينة والنتيجة وسير عمل المختبر بدل اختراع هذه الحالات من الصفر.</p>
+      <div class="type">المستودع والموقع</div>
+      <div class="links"><a href="https://github.com/openelisglobal/openelis-global2" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://openelis-global.org/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>تحقق من توافق أجهزة التحليل محليًا، وعمق الوظائف، والرخص والتكاملات قبل اختيار أي مكون.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P1" data-search="orthanc خادم dicom خفيف مع rest api، مناسب لفهم تخزين/تبادل الصور الطبية واختبارات التكامل. الأنظمة الطبية المرجعية الموقع والوثائق ليس نظام ris/pacs مؤسسيًا كاملًا بحد ذاته، ويجب مراجعة الرخص والإضافات.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p1">P1</span></div>
+      <h3>Orthanc</h3><p>خادم DICOM خفيف مع REST API، مناسب لفهم تخزين/تبادل الصور الطبية واختبارات التكامل.</p>
+      <div class="type">الموقع والوثائق</div>
+      <div class="links"><a href="https://www.orthanc-server.com/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://book.orthanc-server.com/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>ليس نظام RIS/PACS مؤسسيًا كاملًا بحد ذاته، ويجب مراجعة الرخص والإضافات.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P1" data-search="dcm4chee archive أرشفة dicom مفتوحة المصدر بمستوى مؤسسي؛ مفيدة لدراسة تدفقات الأرشفة وقوائم الدراسات والتكامل. الأنظمة الطبية المرجعية المستودع لا تعتمدها إنتاجيًا دون اختبار التوافق والأداء والأمان والتشغيل.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p1">P1</span></div>
+      <h3>dcm4chee Archive</h3><p>أرشفة DICOM مفتوحة المصدر بمستوى مؤسسي؛ مفيدة لدراسة تدفقات الأرشفة وقوائم الدراسات والتكامل.</p>
+      <div class="type">المستودع</div>
+      <div class="links"><a href="https://github.com/dcm4che/dcm4chee-arc-light" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://dcm4chee.org/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا تعتمدها إنتاجيًا دون اختبار التوافق والأداء والأمان والتشغيل.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P1" data-search="ohif viewer عارض صور طبي مفتوح المصدر قابل للتوسعة، مرتبط بـ dicomweb؛ مرجع لتطوير وحدة الأشعة بدل بناء عارض تشخيصي من الصفر. الأنظمة الطبية المرجعية المستودع والعرض راجع تراخيص الكود والإضافات؛ التوافق التقني وحده لا يثبت ملاءمة الاستخدام التشخيصي.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p1">P1</span></div>
+      <h3>OHIF Viewer</h3><p>عارض صور طبي مفتوح المصدر قابل للتوسعة، مرتبط بـ DICOMweb؛ مرجع لتطوير وحدة الأشعة بدل بناء عارض تشخيصي من الصفر.</p>
+      <div class="type">المستودع والعرض</div>
+      <div class="links"><a href="https://github.com/OHIF/Viewers" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://viewer.ohif.org/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>راجع تراخيص الكود والإضافات؛ التوافق التقني وحده لا يثبت ملاءمة الاستخدام التشخيصي.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P1" data-search="synthea مولّد بيانات مرضى اصطناعية وملفات صحية واقعية المظهر؛ مهم للاختبار والحِمل والعروض دون تعريض بيانات مرضى حقيقية. الأنظمة الطبية المرجعية المستودع البيانات اصطناعية ولا تمثل بالضرورة توزيع مرضى الأردن أو الخليج دون معايرة.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p1">P1</span></div>
+      <h3>Synthea</h3><p>مولّد بيانات مرضى اصطناعية وملفات صحية واقعية المظهر؛ مهم للاختبار والحِمل والعروض دون تعريض بيانات مرضى حقيقية.</p>
+      <div class="type">المستودع</div>
+      <div class="links"><a href="https://github.com/synthetichealth/synthea" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://synthetichealth.github.io/synthea/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>البيانات اصطناعية ولا تمثل بالضرورة توزيع مرضى الأردن أو الخليج دون معايرة.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P2" data-search="openhie architecture مرجع معماري لتبادل المعلومات الصحية بين السجل الصحي، وخدمات الهوية، والمصطلحات، ومكونات التبادل. الأنظمة الطبية المرجعية موقع ومواصفات استعمله لتصميم التكامل الوطني/الإقليمي، لا لبناء بنية تكامل أعقد مما يحتاجه أول عميل.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p2">P2</span></div>
+      <h3>OpenHIE Architecture</h3><p>مرجع معماري لتبادل المعلومات الصحية بين السجل الصحي، وخدمات الهوية، والمصطلحات، ومكونات التبادل.</p>
+      <div class="type">موقع ومواصفات</div>
+      <div class="links"><a href="https://ohie.org/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://guides.ohie.org/arch-spec/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>استعمله لتصميم التكامل الوطني/الإقليمي، لا لبناء بنية تكامل أعقد مما يحتاجه أول عميل.</p></details>
+    </article><article class="item" data-cat="الأنظمة الطبية المرجعية" data-pri="P2" data-search="openehr specifications مواصفات ونماذج سريرية مفتوحة تفصل الدلالات السريرية عن تطبيق البرنامج، مع archetypes وtemplates وaql. الأنظمة الطبية المرجعية معيار/مواصفات قارن openehr مع نموذج argon وfhir؛ لا تعتمد معيارين كمصدر الحقيقة الداخلي دون قرار واضح.">
+      <div class="item-top"><span class="category">الأنظمة الطبية المرجعية</span><span class="priority p2">P2</span></div>
+      <h3>openEHR Specifications</h3><p>مواصفات ونماذج سريرية مفتوحة تفصل الدلالات السريرية عن تطبيق البرنامج، مع Archetypes وTemplates وAQL.</p>
+      <div class="type">معيار/مواصفات</div>
+      <div class="links"><a href="https://specifications.openehr.org/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://specifications.openehr.org/releases/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>قارن openEHR مع نموذج ARGON وFHIR؛ لا تعتمد معيارين كمصدر الحقيقة الداخلي دون قرار واضح.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P0" data-search="hl7 fhir r4 المرجع الأساسي الشائع لكثير من التكاملات الحالية: patient، encounter، observation، medicationrequest، diagnosticreport، claim وغيرها. المعايير الطبية والبيانات المواصفة الرسمية أنشئ implementation guide لكل سوق/شريك، ولا تسمِّ api بأنه متوافق fhir دون اختبارات توافق.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>HL7 FHIR R4</h3><p>المرجع الأساسي الشائع لكثير من التكاملات الحالية: Patient، Encounter، Observation، MedicationRequest، DiagnosticReport، Claim وغيرها.</p>
+      <div class="type">المواصفة الرسمية</div>
+      <div class="links"><a href="https://hl7.org/fhir/R4/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://hl7.org/fhir/R4/capabilitystatement.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>أنشئ Implementation Guide لكل سوق/شريك، ولا تسمِّ API بأنه متوافق FHIR دون اختبارات توافق.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P0" data-search="fhir capabilitystatement يصف أنواع الموارد والعمليات والبحث والملفات المدعومة فعليًا بواسطة خادم fhir. المعايير الطبية والبيانات المواصفة الرسمية انشر قدرات argon الفعلية فقط؛ لا تعلن موارد لا يدعمها التنفيذ.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>FHIR CapabilityStatement</h3><p>يصف أنواع الموارد والعمليات والبحث والملفات المدعومة فعليًا بواسطة خادم FHIR.</p>
+      <div class="type">المواصفة الرسمية</div>
+      <div class="links"><a href="https://hl7.org/fhir/R4/capabilitystatement.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://hl7.org/fhir/R4/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>انشر قدرات ARGON الفعلية فقط؛ لا تعلن موارد لا يدعمها التنفيذ.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="fhir provenance للتوثيق المنظم لمصدر المعلومة ومن أنشأها أو عدّلها أو وقّعها والسياق المرتبط بها. المعايير الطبية والبيانات المواصفة الرسمية provenance ليس بديلًا عن سجل التدقيق الأمني؛ كل منهما يخدم هدفًا مختلفًا.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>FHIR Provenance</h3><p>للتوثيق المنظم لمصدر المعلومة ومن أنشأها أو عدّلها أو وقّعها والسياق المرتبط بها.</p>
+      <div class="type">المواصفة الرسمية</div>
+      <div class="links"><a href="https://hl7.org/fhir/R4/provenance.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://hl7.org/fhir/R4/auditevent.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>Provenance ليس بديلًا عن سجل التدقيق الأمني؛ كل منهما يخدم هدفًا مختلفًا.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="fhir auditevent مرجع لتمثيل أحداث تتعلق بالوصول إلى البيانات أو عمليات الأمن والتدقيق في بيئة fhir. المعايير الطبية والبيانات المواصفة الرسمية لا تخزن أسرارًا أو نصوصًا طبية حساسة زائدة في سجل التدقيق.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>FHIR AuditEvent</h3><p>مرجع لتمثيل أحداث تتعلق بالوصول إلى البيانات أو عمليات الأمن والتدقيق في بيئة FHIR.</p>
+      <div class="type">المواصفة الرسمية</div>
+      <div class="links"><a href="https://hl7.org/fhir/R4/auditevent.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://hl7.org/fhir/R4/security.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا تخزن أسرارًا أو نصوصًا طبية حساسة زائدة في سجل التدقيق.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="fhir consent مرجع لتمثيل حالة الموافقة أو القيود المتعلقة بمشاركة البيانات بحسب الاستخدام المحدد. المعايير الطبية والبيانات المواصفة الرسمية الموافقة القانونية وسير عملها تحتاجان مراجعة قانونية محلية؛ وجود المورد وحده ليس كافيًا.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>FHIR Consent</h3><p>مرجع لتمثيل حالة الموافقة أو القيود المتعلقة بمشاركة البيانات بحسب الاستخدام المحدد.</p>
+      <div class="type">المواصفة الرسمية</div>
+      <div class="links"><a href="https://hl7.org/fhir/R4/consent.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://hl7.org/fhir/R4/security.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>الموافقة القانونية وسير عملها تحتاجان مراجعة قانونية محلية؛ وجود المورد وحده ليس كافيًا.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="fhir bulk data access نمط معياري لتصدير مجموعات كبيرة من موارد fhir بشكل غير متزامن مع تتبع حالة الطلب. المعايير الطبية والبيانات implementation guide يلزم إذن صريح ونطاق تصدير محدد وموافقة وتدقيق وحدود استخدام وحماية ملفات التصدير.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>FHIR Bulk Data Access</h3><p>نمط معياري لتصدير مجموعات كبيرة من موارد FHIR بشكل غير متزامن مع تتبع حالة الطلب.</p>
+      <div class="type">Implementation Guide</div>
+      <div class="links"><a href="https://hl7.org/fhir/uv/bulkdata/en/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://hl7.org/fhir/uv/bulkdata/en/export.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>يلزم إذن صريح ونطاق تصدير محدد وموافقة وتدقيق وحدود استخدام وحماية ملفات التصدير.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="smart app launch نمط موحد لربط تطبيقات خارجية أو داخلية بسياق ehr باستخدام oauth2 ونطاقات صلاحيات محددة. المعايير الطبية والبيانات implementation guide لا تخلط التفويض الخاص بالتطبيق مع الصلاحيات السريرية داخل argon؛ أعد التحقق من الصلاحية على الخادم.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>SMART App Launch</h3><p>نمط موحد لربط تطبيقات خارجية أو داخلية بسياق EHR باستخدام OAuth2 ونطاقات صلاحيات محددة.</p>
+      <div class="type">Implementation Guide</div>
+      <div class="links"><a href="https://hl7.org/fhir/smart-app-launch/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://build.fhir.org/ig/HL7/smart-app-launch/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا تخلط التفويض الخاص بالتطبيق مع الصلاحيات السريرية داخل ARGON؛ أعد التحقق من الصلاحية على الخادم.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="hl7 v2 مهم للربط مع أنظمة المستشفيات والمختبرات وأجهزة التحليل القديمة عبر رسائل adt وorm وoru بحسب الاتفاقية. المعايير الطبية والبيانات المعيار الرسمي حدد لكل شريك إصدار الرسائل والحقول المطلوبة وack/nak وسياسة إعادة المحاولة.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>HL7 v2</h3><p>مهم للربط مع أنظمة المستشفيات والمختبرات وأجهزة التحليل القديمة عبر رسائل ADT وORM وORU بحسب الاتفاقية.</p>
+      <div class="type">المعيار الرسمي</div>
+      <div class="links"><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://docs.cloud.google.com/healthcare-api/docs" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>حدد لكل شريك إصدار الرسائل والحقول المطلوبة وACK/NAK وسياسة إعادة المحاولة.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="dicom &amp; dicomweb معايير الصور الطبية وتبادلها؛ تشمل عمليات qido-rs وwado-rs وstow-rs في dicomweb. المعايير الطبية والبيانات المعيار الرسمي بيانات الصورة الثنائية لا ينبغي وضعها داخل جدول معاملات علائقي عادي؛ استخدم أرشيفًا/تخزينًا مخصصًا.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>DICOM &amp; DICOMweb</h3><p>معايير الصور الطبية وتبادلها؛ تشمل عمليات QIDO-RS وWADO-RS وSTOW-RS في DICOMweb.</p>
+      <div class="type">المعيار الرسمي</div>
+      <div class="links"><a href="https://www.dicomstandard.org/current" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.dicomstandard.org/using/dicomweb" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>بيانات الصورة الثنائية لا ينبغي وضعها داخل جدول معاملات علائقي عادي؛ استخدم أرشيفًا/تخزينًا مخصصًا.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="openapi specification تعريف موحد وقابل للقراءة آليًا لعقود rest api، لتوليد العملاء والتحقق والتوثيق. المعايير الطبية والبيانات المواصفة الرسمية العقد يجب أن يطابق السلوك الفعلي وأن يخضع لاختبارات تعاقدية.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>OpenAPI Specification</h3><p>تعريف موحد وقابل للقراءة آليًا لعقود REST API، لتوليد العملاء والتحقق والتوثيق.</p>
+      <div class="type">المواصفة الرسمية</div>
+      <div class="links"><a href="https://spec.openapis.org/oas/latest.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.openapis.org/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>العقد يجب أن يطابق السلوك الفعلي وأن يخضع لاختبارات تعاقدية.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P2" data-search="asyncapi توثيق عقود الرسائل والأحداث والقنوات في الأنظمة المعتمدة على الأحداث. المعايير الطبية والبيانات المواصفة الرسمية ثبت إصدار الرسائل وسياسة التوافق بين المستهلكين والمنتجين.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p2">P2</span></div>
+      <h3>AsyncAPI</h3><p>توثيق عقود الرسائل والأحداث والقنوات في الأنظمة المعتمدة على الأحداث.</p>
+      <div class="type">المواصفة الرسمية</div>
+      <div class="links"><a href="https://www.asyncapi.com/docs" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.asyncapi.com/docs/tools/generator/asyncapi-document" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>ثبت إصدار الرسائل وسياسة التوافق بين المستهلكين والمنتجين.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P2" data-search="cloudevents شكل موحد لبيانات غلاف الأحداث يساعد في تقليل اختلاف شكل الحدث بين الأنظمة. المعايير الطبية والبيانات المواصفة الرسمية لا تضع phi في عناوين الأحداث أو metadata دون حاجة وتقييم خصوصية.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p2">P2</span></div>
+      <h3>CloudEvents</h3><p>شكل موحد لبيانات غلاف الأحداث يساعد في تقليل اختلاف شكل الحدث بين الأنظمة.</p>
+      <div class="type">المواصفة الرسمية</div>
+      <div class="links"><a href="https://cloudevents.io/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/cloudevents/spec" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا تضع PHI في عناوين الأحداث أو metadata دون حاجة وتقييم خصوصية.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="who icd api / icd-11 تصنيفات الأمراض الرسمية وواجهات برمجية للوصول إلى icd؛ مفيدة للتصنيف والترميز والإحصاءات. المعايير الطبية والبيانات منظمة الصحة العالمية راجع شروط الترخيص وإسناد الحقوق وسياسة api قبل التوزيع التجاري أو التخزين المحلي.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>WHO ICD API / ICD-11</h3><p>تصنيفات الأمراض الرسمية وواجهات برمجية للوصول إلى ICD؛ مفيدة للتصنيف والترميز والإحصاءات.</p>
+      <div class="type">منظمة الصحة العالمية</div>
+      <div class="links"><a href="https://icd.who.int/icdapi" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://icd.who.int/docs/icd-api/APIDoc-Version2/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>راجع شروط الترخيص وإسناد الحقوق وسياسة API قبل التوزيع التجاري أو التخزين المحلي.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="snomed ct قاموس سريري منظم للمفاهيم والتشخيصات والإجراءات والملاحظات السريرية. المعايير الطبية والبيانات المرجع الرسمي الترخيص يختلف حسب الإقليم والعضوية الوطنية؛ لا تفترض حق التوزيع تلقائيًا في كل دولة.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>SNOMED CT</h3><p>قاموس سريري منظم للمفاهيم والتشخيصات والإجراءات والملاحظات السريرية.</p>
+      <div class="type">المرجع الرسمي</div>
+      <div class="links"><a href="https://www.snomed.org/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.snomed.org/get-snomed" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>الترخيص يختلف حسب الإقليم والعضوية الوطنية؛ لا تفترض حق التوزيع تلقائيًا في كل دولة.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="loinc رموز معيارية للتحاليل والملاحظات والقياسات السريرية، مفيدة لربط النتائج بين الأنظمة. المعايير الطبية والبيانات المرجع الرسمي متاح تحت رخصة مفتوحة بشروط؛ راجع الشروط الحالية خاصة عند توزيع نسخ/مشتقات.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>LOINC</h3><p>رموز معيارية للتحاليل والملاحظات والقياسات السريرية، مفيدة لربط النتائج بين الأنظمة.</p>
+      <div class="type">المرجع الرسمي</div>
+      <div class="links"><a href="https://loinc.org/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://loinc.org/kb/license" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>متاح تحت رخصة مفتوحة بشروط؛ راجع الشروط الحالية خاصة عند توزيع نسخ/مشتقات.</p></details>
+    </article><article class="item" data-cat="المعايير الطبية والبيانات" data-pri="P1" data-search="openehr archetypes &amp; templates نموذج لتوحيد تعريف المعلومات السريرية المتخصصة بحيث يساهم المختصون في تصميم نماذج قابلة لإعادة الاستخدام. المعايير الطبية والبيانات المواصفات الرسمية مفيد كمصدر تصميم؛ حدد هل سيكون نموذج التخزين الداخلي لـ argon أو مرجعًا للمقارنة فقط.">
+      <div class="item-top"><span class="category">المعايير الطبية والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>openEHR Archetypes &amp; Templates</h3><p>نموذج لتوحيد تعريف المعلومات السريرية المتخصصة بحيث يساهم المختصون في تصميم نماذج قابلة لإعادة الاستخدام.</p>
+      <div class="type">المواصفات الرسمية</div>
+      <div class="links"><a href="https://specifications.openehr.org/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://specifications.openehr.org/releases/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>مفيد كمصدر تصميم؛ حدد هل سيكون نموذج التخزين الداخلي لـ ARGON أو مرجعًا للمقارنة فقط.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P0" data-search="spring boot إطار java مناسب لبناء apis وخدمات تطبيق مؤسسية، مع تكامل للأمن والاختبار والتشغيل. الهيكل الخلفي والبيانات وثائق رسمية ثبت إصدارًا مدعومًا ومتوافقًا مع jdk والتبعيات؛ لا تستخدم الإصدارات snapshot في الإنتاج.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>Spring Boot</h3><p>إطار Java مناسب لبناء APIs وخدمات تطبيق مؤسسية، مع تكامل للأمن والاختبار والتشغيل.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://docs.spring.io/spring-boot/index.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://docs.spring.io/spring-boot/reference/actuator/index.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>ثبت إصدارًا مدعومًا ومتوافقًا مع JDK والتبعيات؛ لا تستخدم الإصدارات snapshot في الإنتاج.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P0" data-search="spring modulith — module verification يفحص حدود الوحدات واعتمادياتها والدورات غير المسموحة؛ ممتاز لحماية وحدات patient وclinical وlab وغيرها من التشابك. الهيكل الخلفي والبيانات وثائق رسمية اجعله شرط ci؛ حدود التصميم المكتوبة يجب أن تصبح اختبارات تفشل عند كسرها.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>Spring Modulith — Module Verification</h3><p>يفحص حدود الوحدات واعتمادياتها والدورات غير المسموحة؛ ممتاز لحماية وحدات Patient وClinical وLab وغيرها من التشابك.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://docs.spring.io/spring-modulith/reference/verification.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://docs.spring.io/spring-modulith/reference/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>اجعله شرط CI؛ حدود التصميم المكتوبة يجب أن تصبح اختبارات تفشل عند كسرها.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P0" data-search="spring modulith — transactional events سجل نشر للأحداث يكتب ضمن المعاملة الأصلية مع حالة اكتمال وإعادة نشر الحالات غير المكتملة وفق الإعداد. الهيكل الخلفي والبيانات وثائق رسمية خيار مناسب للبداية في modular monolith؛ قيّم متى تحتاج وسيط رسائل خارجيًا.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>Spring Modulith — Transactional Events</h3><p>سجل نشر للأحداث يكتب ضمن المعاملة الأصلية مع حالة اكتمال وإعادة نشر الحالات غير المكتملة وفق الإعداد.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://docs.spring.io/spring-modulith/reference/events.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://docs.spring.io/spring-modulith/reference/appendix.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>خيار مناسب للبداية في Modular Monolith؛ قيّم متى تحتاج وسيط رسائل خارجيًا.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P0" data-search="postgresql row-level security سياسات قاعدة البيانات تقيد الصفوف التي يمكن قراءتها أو تعديلها، مع سلوك deny-by-default عند تفعيلها بلا سياسات. الهيكل الخلفي والبيانات وثائق رسمية مالك الجدول وأدوار bypassrls قد تتجاوز السياسات؛ اختبر ذلك عمليًا ولا تعتمد على rls وحده.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>PostgreSQL Row-Level Security</h3><p>سياسات قاعدة البيانات تقيد الصفوف التي يمكن قراءتها أو تعديلها، مع سلوك deny-by-default عند تفعيلها بلا سياسات.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://www.postgresql.org/docs/current/ddl-rowsecurity.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.postgresql.org/docs/current/backup.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>مالك الجدول وأدوار BYPASSRLS قد تتجاوز السياسات؛ اختبر ذلك عمليًا ولا تعتمد على RLS وحده.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P0" data-search="postgresql backup &amp; restore / pitr الوثائق الرسمية للنسخ والاستعادة والأرشفة المستمرة والتعافي إلى نقطة زمنية. الهيكل الخلفي والبيانات وثائق رسمية النسخة الاحتياطية ليست مثبتة حتى تنجح تجربة استعادة موثقة.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>PostgreSQL Backup &amp; Restore / PITR</h3><p>الوثائق الرسمية للنسخ والاستعادة والأرشفة المستمرة والتعافي إلى نقطة زمنية.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://www.postgresql.org/docs/current/backup.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.postgresql.org/docs/current/warm-standby.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>النسخة الاحتياطية ليست مثبتة حتى تنجح تجربة استعادة موثقة.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P1" data-search="pgbackrest خيار ناضج لنسخ postgresql واستعادته بشكل متوازٍ ومحلي أو عبر اتصال آمن. الهيكل الخلفي والبيانات المستودع والوثائق قارن مع إمكانات الخدمة المُدارة؛ لا تضف أداة تشغيلية جديدة إذا كانت الخدمة تحقق متطلباتك.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>pgBackRest</h3><p>خيار ناضج لنسخ PostgreSQL واستعادته بشكل متوازٍ ومحلي أو عبر اتصال آمن.</p>
+      <div class="type">المستودع والوثائق</div>
+      <div class="links"><a href="https://github.com/pgbackrest/pgbackrest" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://pgbackrest.org/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>قارن مع إمكانات الخدمة المُدارة؛ لا تضف أداة تشغيلية جديدة إذا كانت الخدمة تحقق متطلباتك.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P0" data-search="flyway database migrations إصدارات تغييرات قاعدة البيانات كسكربتات يمكن مراجعتها وتطبيقها ضمن خط نشر مضبوط. الهيكل الخلفي والبيانات الوثائق الرسمية اختبر migration على نسخة بيانات مماثلة، وخطة rollback أو roll-forward وتوافق الإصدارات.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>Flyway Database Migrations</h3><p>إصدارات تغييرات قاعدة البيانات كسكربتات يمكن مراجعتها وتطبيقها ضمن خط نشر مضبوط.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://documentation.red-gate.com/flyway" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://documentation.red-gate.com/flyway/flyway-concepts/migrations" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>اختبر migration على نسخة بيانات مماثلة، وخطة rollback أو roll-forward وتوافق الإصدارات.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P1" data-search="liquibase بديل لإدارة تغييرات مخطط البيانات كسجل تغييرات مع قابلية مراجعة وتطبيق متكرر. الهيكل الخلفي والبيانات الوثائق الرسمية اختر أداة migrations واحدة كمعيار للمشروع، ولا تخلطها مع flyway دون مبرر.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>Liquibase</h3><p>بديل لإدارة تغييرات مخطط البيانات كسجل تغييرات مع قابلية مراجعة وتطبيق متكرر.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://docs.liquibase.com/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/liquibase/liquibase" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>اختر أداة migrations واحدة كمعيار للمشروع، ولا تخلطها مع Flyway دون مبرر.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P0" data-search="keycloak إدارة الهوية والمصادقة وتكامل oidc/oauth2 وsso وmfa وفق إعداد مناسب. الهيكل الخلفي والبيانات وثائق رسمية إعدادات realm والـ client والـ redirect وmfa والجلسات مهمة بقدر اختيار المنتج.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>Keycloak</h3><p>إدارة الهوية والمصادقة وتكامل OIDC/OAuth2 وSSO وMFA وفق إعداد مناسب.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://www.keycloak.org/documentation" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.keycloak.org/securing-apps/oidc-layers" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>إعدادات realm والـ client والـ redirect وMFA والجلسات مهمة بقدر اختيار المنتج.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P0" data-search="spring security مصدر رسمي لحماية api، والتحقق من jwt/oauth2، وصلاحيات الأساليب، وسياسات الوصول. الهيكل الخلفي والبيانات وثائق رسمية استخدم server-side authorization ومنعًا افتراضيًا؛ لا تثق بمعرّف tenant من طلب المستخدم وحده.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p0">P0</span></div>
+      <h3>Spring Security</h3><p>مصدر رسمي لحماية API، والتحقق من JWT/OAuth2، وصلاحيات الأساليب، وسياسات الوصول.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://docs.spring.io/spring-security/reference/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>استخدم server-side authorization ومنعًا افتراضيًا؛ لا تثق بمعرّف tenant من طلب المستخدم وحده.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P1" data-search="temporal منصة تنفيذ دائم لرحلات العمل طويلة العمر التي تحتاج retries واستئنافًا بعد تعطل الخدمات. الهيكل الخلفي والبيانات الوثائق الرسمية مفيد للمطالبات والتجهيزات المعقدة عند الحاجة؛ ليس مطلوبًا لكل عملية crud ولا بديلًا عن تصميم idempotency.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>Temporal</h3><p>منصة تنفيذ دائم لرحلات العمل طويلة العمر التي تحتاج retries واستئنافًا بعد تعطل الخدمات.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://docs.temporal.io/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://docs.temporal.io/tasks" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>مفيد للمطالبات والتجهيزات المعقدة عند الحاجة؛ ليس مطلوبًا لكل عملية CRUD ولا بديلًا عن تصميم idempotency.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P1" data-search="debezium outbox event router نمط تقني لنشر الأحداث بشكل موثوق من outbox؛ يحد من حالة حفظ البيانات دون إرسال الحدث أو العكس. الهيكل الخلفي والبيانات الوثائق الرسمية يتطلب تشغيل kafka connect/debezium وبنية إضافية؛ قد يكون أثقل من spring modulith في المرحلة الأولى.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>Debezium Outbox Event Router</h3><p>نمط تقني لنشر الأحداث بشكل موثوق من Outbox؛ يحد من حالة حفظ البيانات دون إرسال الحدث أو العكس.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/debezium/debezium-examples" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>يتطلب تشغيل Kafka Connect/Debezium وبنية إضافية؛ قد يكون أثقل من Spring Modulith في المرحلة الأولى.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P1" data-search="resilience4j دوائر قاطع، وإعادة محاولة، وtimeouts، وbulkheads لتقليل تأثير فشل الخدمات الخارجية. الهيكل الخلفي والبيانات الوثائق الرسمية لا تجعل retries تعيد أوامر طبية/مالية دون idempotency وقيود واضحة.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>Resilience4j</h3><p>دوائر قاطع، وإعادة محاولة، وtimeouts، وbulkheads لتقليل تأثير فشل الخدمات الخارجية.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://resilience4j.readme.io/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/resilience4j/resilience4j" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا تجعل retries تعيد أوامر طبية/مالية دون idempotency وقيود واضحة.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P1" data-search="opa policy as code محرك سياسات قابل للفصل يمكن أن يساعد في سياسات التفويض والإدارة المركبة عند تزايد التعقيد. الهيكل الخلفي والبيانات الوثائق الرسمية ليس لازمًا من البداية إذا كانت صلاحيات spring security واضحة؛ لا تضف مصدر صلاحيات ثانيًا بلا تصميم.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>OPA Policy as Code</h3><p>محرك سياسات قابل للفصل يمكن أن يساعد في سياسات التفويض والإدارة المركبة عند تزايد التعقيد.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://www.openpolicyagent.org/docs/latest/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/open-policy-agent/opa" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>ليس لازمًا من البداية إذا كانت صلاحيات Spring Security واضحة؛ لا تضف مصدر صلاحيات ثانيًا بلا تصميم.</p></details>
+    </article><article class="item" data-cat="الهيكل الخلفي والبيانات" data-pri="P1" data-search="openapi وثّق عقد كل rest api، وأخطاءه، والمصادقة، والتصفح، وإصداراته. الهيكل الخلفي والبيانات المواصفة الرسمية لا تكشف عمليات داخلية أو بيانات حساسة في وثائق api العامة.">
+      <div class="item-top"><span class="category">الهيكل الخلفي والبيانات</span><span class="priority p1">P1</span></div>
+      <h3>OpenAPI</h3><p>وثّق عقد كل REST API، وأخطاءه، والمصادقة، والتصفح، وإصداراته.</p>
+      <div class="type">المواصفة الرسمية</div>
+      <div class="links"><a href="https://spec.openapis.org/oas/latest.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://swagger.io/specification/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا تكشف عمليات داخلية أو بيانات حساسة في وثائق API العامة.</p></details>
+    </article><article class="item" data-cat="التشغيل والمراقبة والاستمرارية" data-pri="P0" data-search="opentelemetry معيار ومكتبات لتوليد وجمع traces وmetrics وlogs عبر الخدمات بدون التقيد بمورّد واحد. التشغيل والمراقبة والاستمرارية الوثائق الرسمية نظّف telemetry من phi/pii والرموز السرية؛ استخدم correlation ids غير كاشفة.">
+      <div class="item-top"><span class="category">التشغيل والمراقبة والاستمرارية</span><span class="priority p0">P0</span></div>
+      <h3>OpenTelemetry</h3><p>معيار ومكتبات لتوليد وجمع traces وmetrics وlogs عبر الخدمات بدون التقيد بمورّد واحد.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://opentelemetry.io/docs/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://opentelemetry.io/docs/security/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>نظّف telemetry من PHI/PII والرموز السرية؛ استخدم correlation IDs غير كاشفة.</p></details>
+    </article><article class="item" data-cat="التشغيل والمراقبة والاستمرارية" data-pri="P1" data-search="prometheus مراقبة metrics والتنبيهات المرتبطة بزمن الاستجابة والأخطاء والموارد وأداء الـ queues. التشغيل والمراقبة والاستمرارية الوثائق الرسمية لا تضع patient ids أو أسماء المرضى كـ labels لأنها تسبب تسربًا وcardinality عالية.">
+      <div class="item-top"><span class="category">التشغيل والمراقبة والاستمرارية</span><span class="priority p1">P1</span></div>
+      <h3>Prometheus</h3><p>مراقبة metrics والتنبيهات المرتبطة بزمن الاستجابة والأخطاء والموارد وأداء الـ queues.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://prometheus.io/docs/introduction/overview/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://prometheus.io/docs/practices/naming/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا تضع patient IDs أو أسماء المرضى كـ labels لأنها تسبب تسربًا وcardinality عالية.</p></details>
+    </article><article class="item" data-cat="التشغيل والمراقبة والاستمرارية" data-pri="P1" data-search="grafana لوحات تشغيل وقياس slo وواجهات للمراقبة عبر مصادر متعددة. التشغيل والمراقبة والاستمرارية الوثائق الرسمية افصل لوحات العمليات عن عرض المعلومات السريرية؛ قلل البيانات الحساسة.">
+      <div class="item-top"><span class="category">التشغيل والمراقبة والاستمرارية</span><span class="priority p1">P1</span></div>
+      <h3>Grafana</h3><p>لوحات تشغيل وقياس SLO وواجهات للمراقبة عبر مصادر متعددة.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://grafana.com/docs/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://grafana.com/docs/grafana/latest/alerting/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>افصل لوحات العمليات عن عرض المعلومات السريرية؛ قلل البيانات الحساسة.</p></details>
+    </article><article class="item" data-cat="التشغيل والمراقبة والاستمرارية" data-pri="P1" data-search="google sre workbook منهجية slo/error budgets والاستجابة للحوادث والمراجعات بعد الأعطال. التشغيل والمراقبة والاستمرارية دليل رسمي حول هدف التوفر إلى قياس فعلي من المستخدم إلى قاعدة البيانات والتكامل الخارجي.">
+      <div class="item-top"><span class="category">التشغيل والمراقبة والاستمرارية</span><span class="priority p1">P1</span></div>
+      <h3>Google SRE Workbook</h3><p>منهجية SLO/Error Budgets والاستجابة للحوادث والمراجعات بعد الأعطال.</p>
+      <div class="type">دليل رسمي</div>
+      <div class="links"><a href="https://sre.google/workbook/table-of-contents/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://sre.google/sre-book/table-of-contents/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>حول هدف التوفر إلى قياس فعلي من المستخدم إلى قاعدة البيانات والتكامل الخارجي.</p></details>
+    </article><article class="item" data-cat="التشغيل والمراقبة والاستمرارية" data-pri="P1" data-search="google cloud healthcare api خدمة مُدارة تدعم مخازن fhir وdicom وhl7v2، مفيدة للمقارنة بين البناء الذاتي والخدمة المُدارة. التشغيل والمراقبة والاستمرارية وثائق رسمية الخدمة ليست مفتوحة المصدر؛ قارن التكلفة، وتوفر الإقليم، والإقامة القانونية للبيانات، والتبعية للمورّد.">
+      <div class="item-top"><span class="category">التشغيل والمراقبة والاستمرارية</span><span class="priority p1">P1</span></div>
+      <h3>Google Cloud Healthcare API</h3><p>خدمة مُدارة تدعم مخازن FHIR وDICOM وHL7v2، مفيدة للمقارنة بين البناء الذاتي والخدمة المُدارة.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://docs.cloud.google.com/healthcare-api/docs" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://docs.cloud.google.com/healthcare-api/docs/introduction" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>الخدمة ليست مفتوحة المصدر؛ قارن التكلفة، وتوفر الإقليم، والإقامة القانونية للبيانات، والتبعية للمورّد.</p></details>
+    </article><article class="item" data-cat="التشغيل والمراقبة والاستمرارية" data-pri="P1" data-search="cloud events / pub/sub concepts مرجع لرسائل أحداث بين المجالات ولإدارة الرسائل والفشل وإعادة الإرسال حسب منصة التشغيل المختارة. التشغيل والمراقبة والاستمرارية وثائق رسمية اختيار pub/sub قرار بنيوي مرتبط بالسحابة والتكاليف؛ لا تضف عدة message brokers لنفس المهمة.">
+      <div class="item-top"><span class="category">التشغيل والمراقبة والاستمرارية</span><span class="priority p1">P1</span></div>
+      <h3>Cloud Events / Pub/Sub Concepts</h3><p>مرجع لرسائل أحداث بين المجالات ولإدارة الرسائل والفشل وإعادة الإرسال حسب منصة التشغيل المختارة.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://docs.cloud.google.com/pubsub/docs/overview" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://docs.cloud.google.com/pubsub/docs/dead-letter-topics" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>اختيار Pub/Sub قرار بنيوي مرتبط بالسحابة والتكاليف؛ لا تضف عدة message brokers لنفس المهمة.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P0" data-search="owasp asvs 5.0 قائمة متطلبات تحقق قابلة للتتبع لتصميم واختبار أمان تطبيقات الويب وواجهات الخدمات. الأمان وسلسلة توريد البرمجيات معيار أمني اعتمد إصدارًا ثابتًا للمشروع؛ لا تستخدم bleeding-edge كخط أساس إنتاجي.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p0">P0</span></div>
+      <h3>OWASP ASVS 5.0</h3><p>قائمة متطلبات تحقق قابلة للتتبع لتصميم واختبار أمان تطبيقات الويب وواجهات الخدمات.</p>
+      <div class="type">معيار أمني</div>
+      <div class="links"><a href="https://github.com/OWASP/ASVS" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/OWASP/ASVS/releases" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>اعتمد إصدارًا ثابتًا للمشروع؛ لا تستخدم bleeding-edge كخط أساس إنتاجي.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P0" data-search="owasp api security top 10 2023 مخاطر api مثل broken object level authorization واستهلاك الموارد غير المقيد وسوء الإعداد. الأمان وسلسلة توريد البرمجيات مرجع أمني حوّل كل خطر إلى ضابط واختبار، لا تكتفِ بإضافة رابط في وثائق الأمان.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p0">P0</span></div>
+      <h3>OWASP API Security Top 10 2023</h3><p>مخاطر API مثل Broken Object Level Authorization واستهلاك الموارد غير المقيد وسوء الإعداد.</p>
+      <div class="type">مرجع أمني</div>
+      <div class="links"><a href="https://owasp.org/www-project-api-security/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://api-security.owasp.org/editions/2023/en/0x00-header/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>حوّل كل خطر إلى ضابط واختبار، لا تكتفِ بإضافة رابط في وثائق الأمان.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P0" data-search="nist ssdf sp 800-218 إطار ممارسات لتقليل الثغرات في دورة تطوير البرمجيات وتأمين عمليات الإنتاج والإصدار. الأمان وسلسلة توريد البرمجيات معيار حكومي إطار توجيهي؛ لا يغني عن تحليل تهديدات محدد للمنصة الصحية.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p0">P0</span></div>
+      <h3>NIST SSDF SP 800-218</h3><p>إطار ممارسات لتقليل الثغرات في دورة تطوير البرمجيات وتأمين عمليات الإنتاج والإصدار.</p>
+      <div class="type">معيار حكومي</div>
+      <div class="links"><a href="https://csrc.nist.gov/pubs/sp/800/218/final" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.nist.gov/itl/ssd/software-quality-group/ssdf" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>إطار توجيهي؛ لا يغني عن تحليل تهديدات محدد للمنصة الصحية.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P1" data-search="openssf scorecard فحص آلي لممارسات أمان مستودعات المصادر المفتوحة مثل إعدادات ci والصلاحيات وممارسات الإصدار. الأمان وسلسلة توريد البرمجيات أداة مفتوحة المصدر درجة scorecard مؤشر وليس ضمانًا؛ اقرأ النتائج والتاريخ وطبيعة المشروع.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p1">P1</span></div>
+      <h3>OpenSSF Scorecard</h3><p>فحص آلي لممارسات أمان مستودعات المصادر المفتوحة مثل إعدادات CI والصلاحيات وممارسات الإصدار.</p>
+      <div class="type">أداة مفتوحة المصدر</div>
+      <div class="links"><a href="https://github.com/ossf/scorecard" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://scorecard.dev/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>درجة Scorecard مؤشر وليس ضمانًا؛ اقرأ النتائج والتاريخ وطبيعة المشروع.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P1" data-search="slsa مستويات وattestations لتقوية مصدر البناء وسلسلة توريد البرمجيات. الأمان وسلسلة توريد البرمجيات مواصفة أمنية طبّق تدريجيًا على خطوط البناء ولا تعتبر وجود workflow وحده مستوى slsa محققًا.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p1">P1</span></div>
+      <h3>SLSA</h3><p>مستويات وAttestations لتقوية مصدر البناء وسلسلة توريد البرمجيات.</p>
+      <div class="type">مواصفة أمنية</div>
+      <div class="links"><a href="https://slsa.dev/spec/v1.2/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://slsa.dev/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>طبّق تدريجيًا على خطوط البناء ولا تعتبر وجود workflow وحده مستوى SLSA محققًا.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P1" data-search="github codeql تحليل ساكن لاكتشاف فئات من الثغرات في الكود ضمن ci. الأمان وسلسلة توريد البرمجيات وثائق رسمية لا يكتشف كل الثغرات؛ ضمه إلى مراجعة كود واختبارات واختبار اختراقي مناسب.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p1">P1</span></div>
+      <h3>GitHub CodeQL</h3><p>تحليل ساكن لاكتشاف فئات من الثغرات في الكود ضمن CI.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/github/codeql" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا يكتشف كل الثغرات؛ ضمه إلى مراجعة كود واختبارات واختبار اختراقي مناسب.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P1" data-search="github dependency review مراجعة تغييرات التبعيات ورصد الحزم الضعيفة أو ذات الشروط التي تحتاج انتباهًا. الأمان وسلسلة توريد البرمجيات وثائق رسمية أضف sbom وفحص تراخيص وأجهزة تنبيه للتحديثات الأمنية، مع سياسة قبول واضحة.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p1">P1</span></div>
+      <h3>GitHub Dependency Review</h3><p>مراجعة تغييرات التبعيات ورصد الحزم الضعيفة أو ذات الشروط التي تحتاج انتباهًا.</p>
+      <div class="type">وثائق رسمية</div>
+      <div class="links"><a href="https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/actions/dependency-review-action" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>أضف SBOM وفحص تراخيص وأجهزة تنبيه للتحديثات الأمنية، مع سياسة قبول واضحة.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P1" data-search="trivy ماسح للثغرات والإعدادات الخاطئة والأسرار وملفات الصور/الحاويات حسب الإعدادات المدعومة. الأمان وسلسلة توريد البرمجيات مستودع رسمي اعتمد مصادر قواعد واضحة وسياسة استثناءات بتاريخ انتهاء، وراجع النتائج يدويًا.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p1">P1</span></div>
+      <h3>Trivy</h3><p>ماسح للثغرات والإعدادات الخاطئة والأسرار وملفات الصور/الحاويات حسب الإعدادات المدعومة.</p>
+      <div class="type">مستودع رسمي</div>
+      <div class="links"><a href="https://github.com/aquasecurity/trivy" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://trivy.dev/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>اعتمد مصادر قواعد واضحة وسياسة استثناءات بتاريخ انتهاء، وراجع النتائج يدويًا.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P1" data-search="syft + grype syft لتوليد sbom؛ grype لفحص الثغرات في الحزم والصور. الأمان وسلسلة توريد البرمجيات مستودعات رسمية احتفظ بمكونات الإصدار والـ sbom والنتائج وامنع أسرار البناء من التسرب.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p1">P1</span></div>
+      <h3>Syft + Grype</h3><p>Syft لتوليد SBOM؛ Grype لفحص الثغرات في الحزم والصور.</p>
+      <div class="type">مستودعات رسمية</div>
+      <div class="links"><a href="https://github.com/anchore/syft" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/anchore/grype" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>احتفظ بمكونات الإصدار والـ SBOM والنتائج وامنع أسرار البناء من التسرب.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P2" data-search="sigstore cosign توقيع والتحقق من صور الحاويات والـ artifacts بما يساعد على تأكيد مصدر الإصدار وسلامته. الأمان وسلسلة توريد البرمجيات مستودع ووثائق صمم الثقة في الهوية ومصدر البناء والتحقق عند النشر، لا تضف التوقيع كخطوة شكلية.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p2">P2</span></div>
+      <h3>Sigstore Cosign</h3><p>توقيع والتحقق من صور الحاويات والـ artifacts بما يساعد على تأكيد مصدر الإصدار وسلامته.</p>
+      <div class="type">مستودع ووثائق</div>
+      <div class="links"><a href="https://github.com/sigstore/cosign" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://docs.sigstore.dev/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>صمم الثقة في الهوية ومصدر البناء والتحقق عند النشر، لا تضف التوقيع كخطوة شكلية.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P1" data-search="owasp logging cheat sheet أفضل ممارسات سجلات الأمن مع حماية البيانات الحساسة وعدم تسجيل كلمات المرور والرموز السرية. الأمان وسلسلة توريد البرمجيات مرجع أمني يفصل سجل التدقيق الطبي/الأمني عن سجلات التشخيص التشغيلية؛ لكل واحد صلاحيات واحتفاظ مناسب.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p1">P1</span></div>
+      <h3>OWASP Logging Cheat Sheet</h3><p>أفضل ممارسات سجلات الأمن مع حماية البيانات الحساسة وعدم تسجيل كلمات المرور والرموز السرية.</p>
+      <div class="type">مرجع أمني</div>
+      <div class="links"><a href="https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>يفصل سجل التدقيق الطبي/الأمني عن سجلات التشخيص التشغيلية؛ لكل واحد صلاحيات واحتفاظ مناسب.</p></details>
+    </article><article class="item" data-cat="الأمان وسلسلة توريد البرمجيات" data-pri="P1" data-search="cisa / hhs healthcare cybersecurity goals إرشادات لتحديد أولويات إجراءات الأمن ذات الأثر العالي في بيئات الصحة. الأمان وسلسلة توريد البرمجيات جهة حكومية مرجع مخاطر أمريكي؛ استخدمه لتحسين الضوابط ولا تعتبره قانونًا ملزمًا في الأردن أو الخليج.">
+      <div class="item-top"><span class="category">الأمان وسلسلة توريد البرمجيات</span><span class="priority p1">P1</span></div>
+      <h3>CISA / HHS Healthcare Cybersecurity Goals</h3><p>إرشادات لتحديد أولويات إجراءات الأمن ذات الأثر العالي في بيئات الصحة.</p>
+      <div class="type">جهة حكومية</div>
+      <div class="links"><a href="https://www.cisa.gov/cybersecurity-performance-goals" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://405d.hhs.gov/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>مرجع مخاطر أمريكي؛ استخدمه لتحسين الضوابط ولا تعتبره قانونًا ملزمًا في الأردن أو الخليج.</p></details>
+    </article><article class="item" data-cat="الاختبار والتحقق والأداء" data-pri="P0" data-search="testcontainers for java تشغيل postgresql وخدمات حقيقية مؤقتة أثناء اختبارات التكامل بدل الاعتماد فقط على mocks. الاختبار والتحقق والأداء الموقع والمستودع اختبر rls والمعاملات وترقيات المخطط على postgresql الحقيقي وإعدادات شبه الإنتاج.">
+      <div class="item-top"><span class="category">الاختبار والتحقق والأداء</span><span class="priority p0">P0</span></div>
+      <h3>Testcontainers for Java</h3><p>تشغيل PostgreSQL وخدمات حقيقية مؤقتة أثناء اختبارات التكامل بدل الاعتماد فقط على mocks.</p>
+      <div class="type">الموقع والمستودع</div>
+      <div class="links"><a href="https://testcontainers.com/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/testcontainers/testcontainers-java" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>اختبر RLS والمعاملات وترقيات المخطط على PostgreSQL الحقيقي وإعدادات شبه الإنتاج.</p></details>
+    </article><article class="item" data-cat="الاختبار والتحقق والأداء" data-pri="P1" data-search="pact contract testing اختبارات تعاقدية بين المستهلك ومقدم api لتكشف كسر التكامل قبل نشر النسخة. الاختبار والتحقق والأداء الوثائق الرسمية استخدمه للـ apis الداخلية والخارجية حيث ينفع؛ لا يغني عن fhir conformance validation.">
+      <div class="item-top"><span class="category">الاختبار والتحقق والأداء</span><span class="priority p1">P1</span></div>
+      <h3>Pact Contract Testing</h3><p>اختبارات تعاقدية بين المستهلك ومقدم API لتكشف كسر التكامل قبل نشر النسخة.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://docs.pact.io/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/pact-foundation/pact-jvm" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>استخدمه للـ APIs الداخلية والخارجية حيث ينفع؛ لا يغني عن FHIR conformance validation.</p></details>
+    </article><article class="item" data-cat="الاختبار والتحقق والأداء" data-pri="P1" data-search="grafana k6 اختبارات حمل وأداء api وقياس thresholds تحت ضغط متدرج. الاختبار والتحقق والأداء الوثائق الرسمية اختبر رحلات واقعية وأحجام بيانات وعمليات كتابة وقراءة، وليس endpoint بسيطًا فقط.">
+      <div class="item-top"><span class="category">الاختبار والتحقق والأداء</span><span class="priority p1">P1</span></div>
+      <h3>Grafana k6</h3><p>اختبارات حمل وأداء API وقياس thresholds تحت ضغط متدرج.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://grafana.com/docs/k6/latest/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://grafana.com/docs/k6/latest/testing-guides/" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>اختبر رحلات واقعية وأحجام بيانات وعمليات كتابة وقراءة، وليس endpoint بسيطًا فقط.</p></details>
+    </article><article class="item" data-cat="الاختبار والتحقق والأداء" data-pri="P1" data-search="junit 5 أساس اختبارات java الوحدوية مع تنظيم الحالات والـ assertions والامتدادات. الاختبار والتحقق والأداء الوثائق الرسمية اختبر الحالات السريرية والمالية السلبية كذلك، وليس happy path فقط.">
+      <div class="item-top"><span class="category">الاختبار والتحقق والأداء</span><span class="priority p1">P1</span></div>
+      <h3>JUnit 5</h3><p>أساس اختبارات Java الوحدوية مع تنظيم الحالات والـ assertions والامتدادات.</p>
+      <div class="type">الوثائق الرسمية</div>
+      <div class="links"><a href="https://junit.org/junit5/docs/current/user-guide/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/junit-team/junit5" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>اختبر الحالات السريرية والمالية السلبية كذلك، وليس happy path فقط.</p></details>
+    </article><article class="item" data-cat="الاختبار والتحقق والأداء" data-pri="P1" data-search="awaitility يسهل اختبار الشروط غير المتزامنة في تطبيقات java ورسائل الأحداث. الاختبار والتحقق والأداء المستودع والوثائق تجنب sleeps ثابتة؛ اختبر المهلة، وإعادة المحاولة، والفشل المتأخر.">
+      <div class="item-top"><span class="category">الاختبار والتحقق والأداء</span><span class="priority p1">P1</span></div>
+      <h3>Awaitility</h3><p>يسهل اختبار الشروط غير المتزامنة في تطبيقات Java ورسائل الأحداث.</p>
+      <div class="type">المستودع والوثائق</div>
+      <div class="links"><a href="https://github.com/awaitility/awaitility" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://github.com/awaitility/awaitility/wiki/Usage" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>تجنب sleeps ثابتة؛ اختبر المهلة، وإعادة المحاولة، والفشل المتأخر.</p></details>
+    </article><article class="item" data-cat="الحوكمة والقانون والسلامة السريرية" data-pri="P0" data-search="jordan personal data protection law مرجع رسمي لقانون حماية البيانات الشخصية الأردني؛ أساس لتحديد أدوار المعالجة والحقوق والنقل والاحتفاظ بمشورة قانونية. الحوكمة والقانون والسلامة السريرية مصدر حكومي المتطلبات القانونية تتوقف على التطبيق والعقود والبيانات؛ يلزم رأي قانوني محلي محدث.">
+      <div class="item-top"><span class="category">الحوكمة والقانون والسلامة السريرية</span><span class="priority p0">P0</span></div>
+      <h3>Jordan Personal Data Protection Law</h3><p>مرجع رسمي لقانون حماية البيانات الشخصية الأردني؛ أساس لتحديد أدوار المعالجة والحقوق والنقل والاحتفاظ بمشورة قانونية.</p>
+      <div class="type">مصدر حكومي</div>
+      <div class="links"><a href="https://www.modee.gov.jo/" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.modee.gov.jo/EBV4.0/Root_Storage/EN/1/PDP_Law_-_English_Version-_officail_translation.pdf" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>المتطلبات القانونية تتوقف على التطبيق والعقود والبيانات؛ يلزم رأي قانوني محلي محدث.</p></details>
+    </article><article class="item" data-cat="الحوكمة والقانون والسلامة السريرية" data-pri="P1" data-search="iso 15189 — medical laboratories مرجع متطلبات الجودة والكفاءة للمختبرات الطبية. الحوكمة والقانون والسلامة السريرية معيار رسمي ينطبق على اعتماد المختبرات ضمن النطاق المحدد، وليس شهادة تلقائية لبرنامج lis.">
+      <div class="item-top"><span class="category">الحوكمة والقانون والسلامة السريرية</span><span class="priority p1">P1</span></div>
+      <h3>ISO 15189 — Medical Laboratories</h3><p>مرجع متطلبات الجودة والكفاءة للمختبرات الطبية.</p>
+      <div class="type">معيار رسمي</div>
+      <div class="links"><a href="https://www.iso.org/standard/76677.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.iso.org/committee/54916.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>ينطبق على اعتماد المختبرات ضمن النطاق المحدد، وليس شهادة تلقائية لبرنامج LIS.</p></details>
+    </article><article class="item" data-cat="الحوكمة والقانون والسلامة السريرية" data-pri="P1" data-search="iso 14971 — risk management معيار إدارة المخاطر للمنتجات الطبية حيث ينطبق؛ يساعد في ربط المخاطر بالتخفيف والتحقق وبقايا المخاطر. الحوكمة والقانون والسلامة السريرية معيار رسمي مدى الانطباق يعتمد على الاستخدام المقصود والتصنيف والتنظيم المحلي؛ اطلب تقييمًا مختصًا.">
+      <div class="item-top"><span class="category">الحوكمة والقانون والسلامة السريرية</span><span class="priority p1">P1</span></div>
+      <h3>ISO 14971 — Risk Management</h3><p>معيار إدارة المخاطر للمنتجات الطبية حيث ينطبق؛ يساعد في ربط المخاطر بالتخفيف والتحقق وبقايا المخاطر.</p>
+      <div class="type">معيار رسمي</div>
+      <div class="links"><a href="https://www.iso.org/standard/72704.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.iso.org/standard/59752.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>مدى الانطباق يعتمد على الاستخدام المقصود والتصنيف والتنظيم المحلي؛ اطلب تقييمًا مختصًا.</p></details>
+    </article><article class="item" data-cat="الحوكمة والقانون والسلامة السريرية" data-pri="P1" data-search="iec 62304 — medical device software lifecycle عملية دورة حياة تطوير برمجيات الأجهزة الطبية حيث يكون البرنامج ضمن نطاق المعيار. الحوكمة والقانون والسلامة السريرية معيار رسمي ليس كل نظام إدارة عيادة جهازًا طبيًا؛ خصائص التشخيص/القرار السريري قد تغير التصنيف، فافحص المقصود القانوني.">
+      <div class="item-top"><span class="category">الحوكمة والقانون والسلامة السريرية</span><span class="priority p1">P1</span></div>
+      <h3>IEC 62304 — Medical Device Software Lifecycle</h3><p>عملية دورة حياة تطوير برمجيات الأجهزة الطبية حيث يكون البرنامج ضمن نطاق المعيار.</p>
+      <div class="type">معيار رسمي</div>
+      <div class="links"><a href="https://webstore.iec.ch/en/publication/6792" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.iso.org/standard/38421.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>ليس كل نظام إدارة عيادة جهازًا طبيًا؛ خصائص التشخيص/القرار السريري قد تغير التصنيف، فافحص المقصود القانوني.</p></details>
+    </article><article class="item" data-cat="الحوكمة والقانون والسلامة السريرية" data-pri="P1" data-search="hhs hipaa security rule مصدر قانوني/تقني أمريكي مفيد لفهم ضمانات المعلومات الصحية في نطاق الولايات المتحدة فقط. الحوكمة والقانون والسلامة السريرية مصدر حكومي لا تصف argon بأنه hipaa-compliant أو معتمدًا قبل تقييم قانوني وضوابط وأدلة؛ hipaa ليست قانونًا عامًا لكل الدول.">
+      <div class="item-top"><span class="category">الحوكمة والقانون والسلامة السريرية</span><span class="priority p1">P1</span></div>
+      <h3>HHS HIPAA Security Rule</h3><p>مصدر قانوني/تقني أمريكي مفيد لفهم ضمانات المعلومات الصحية في نطاق الولايات المتحدة فقط.</p>
+      <div class="type">مصدر حكومي</div>
+      <div class="links"><a href="https://www.hhs.gov/hipaa/for-professionals/security/index.html" target="_blank" rel="noopener noreferrer">المصدر الأساسي ↗</a><a href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html" target="_blank" rel="noopener noreferrer">وثائق / مثال ↗</a></div>
+      <details><summary>ملاحظة اعتماد آمن</summary><p>لا تصف ARGON بأنه HIPAA-compliant أو معتمدًا قبل تقييم قانوني وضوابط وأدلة؛ HIPAA ليست قانونًا عامًا لكل الدول.</p></details>
+    </article></div>
+<h2>ما الذي أبنيه أولًا؟</h2>
+<table><thead><tr><th>المرحلة</th><th>المخرجات الواجب إثباتها</th><th>بوابة الخروج</th></tr></thead><tbody>
+<tr><td><b>0 — حقيقة النطاق</b></td><td>سياقات المجال، نموذج هوية المريض والزيارة، مصادر البيانات، حدود المستأجر، متطلبات أول عميل، سجل قرارات مع بدائل.</td><td>موافقة صاحب القرار + نطاق واضح + لا تعارض مع النظام القائم.</td></tr>
+<tr><td><b>1 — Foundation</b></td><td>Identity، Authorization، TenantContext، PostgreSQL، migrations، Audit، API contracts، OpenTelemetry، CI security scans.</td><td>اختبارات ALLOW/DENY لعزل المستأجر + استعادة قاعدة بيانات + build reproducible.</td></tr>
+<tr><td><b>2 — Clinical Core</b></td><td>Patient/MPI، Consent، Encounter، ClinicalNote versioning، Diagnosis، Allergy، Medication/Order، Terminology، Documents.</td><td>مسارات كاملة مختبرة، حفظ التاريخ وعدم الكتابة الصامتة فوق ملاحظات نهائية، وضبط صلاحيات القراءة الجماعية.</td></tr>
+<tr><td><b>3 — Specialties</b></td><td>الصيدلة، المختبر، الأشعة، ثم إدارة المستشفى بحسب الحاجة؛ لكل منها حالات وسير عمل وتوافق أجهزة/أنظمة.</td><td>اختبارات workflows السليمة والفاشلة، نتائج حرجة، أجهزة/بوابات فعلية في بيئة اختبار، وتحقق سريري.</td></tr>
+<tr><td><b>4 — Interop & Scale</b></td><td>FHIR IGs، HL7 v2 adapters، DICOMweb، payer/country adapters، analytics/read models، bulk data export.</td><td>Conformance/contract tests، قياس حمل، مراجعة قانونية، تجربة استعادة وتعافي، توقيع إصدار وموافقة نشر.</td></tr>
+</tbody></table>
+<h2>قائمة تدقيق لاختيار أي مستودع</h2>
+<table><thead><tr><th>البند</th><th>أسئلة يجب إجابتها</th></tr></thead><tbody>
+<tr><td>الصيانة</td><td>هل توجد إصدارات حديثة؟ هل الـ maintainers نشطون؟ ما سياسة الدعم والثغرات؟ هل هناك إصدارات LTS أو سياسة deprecation؟</td></tr>
+<tr><td>الأمان</td><td>هل توجد CI وtests وCodeQL أو فحوص مشابهة؟ هل تُراجع الاعتمادية والتبعيات؟ هل توجد عملية إفصاح عن الثغرات؟</td></tr>
+<tr><td>الرخصة</td><td>هل الرخصة تسمح بالاستخدام والتعديل والتوزيع التجاري كما تخطط؟ هل جميع الحزم الفرعية والتبعيات لها شروط مفهومة؟</td></tr>
+<tr><td>الملاءمة الطبية</td><td>هل يدعم المجال المطلوب فعلًا؟ هل توجد نماذج وسير عمل سريرية؟ ما حدود استخدامه وما الذي لا يغطيه؟</td></tr>
+<tr><td>التشغيل</td><td>هل توجد وثائق النسخ والاستعادة والتحديث والمراقبة؟ هل تستطيع تشغيله وتحديثه واستعادة بياناته بفريقك؟</td></tr>
+<tr><td>التوافق</td><td>هل توجد ملفات FHIR/DICOM/HL7 محددة واختبارات توافق؟ هل يدعم السوق أو الشريك المستهدف أم يحتاج محولًا؟</td></tr>
+</tbody></table>
+<div class="notice"><strong>تحذير مهم:</strong> لا تجمع PostgreSQL وRedis وKafka وRabbitMQ وPub/Sub وTemporal وmicroservices جميعها لمجرد أنها أدوات معروفة. كل إضافة تزيد سطح الهجوم والتكلفة والعمليات والفشل. ابدأ بنواة متماسكة، وسجل قرارًا لكل تقنية، وأضفها عندما يظهر احتياج مثبت.</div>
+<h2>المراجع التي يجب أن تعتبرها خط أساس مستمرًا</h2>
+<ul>
+<li><a href="https://hl7.org/fhir/R4/" target="_blank" rel="noopener">HL7 FHIR R4</a> وملفات التنفيذ الخاصة بالسوق أو الشريك.</li>
+<li><a href="https://github.com/OWASP/ASVS" target="_blank" rel="noopener">OWASP ASVS 5.0</a> و<a href="https://api-security.owasp.org/editions/2023/en/0x00-header/" target="_blank" rel="noopener">OWASP API Security Top 10</a>.</li>
+<li><a href="https://csrc.nist.gov/pubs/sp/800/218/final" target="_blank" rel="noopener">NIST SSDF</a> و<a href="https://slsa.dev/spec/v1.2/" target="_blank" rel="noopener">SLSA</a> لسلسلة التوريد.</li>
+<li><a href="https://www.postgresql.org/docs/current/ddl-rowsecurity.html" target="_blank" rel="noopener">PostgreSQL RLS</a> و<a href="https://www.postgresql.org/docs/current/backup.html" target="_blank" rel="noopener">Backup & Restore</a>.</li>
+<li><a href="https://opentelemetry.io/docs/" target="_blank" rel="noopener">OpenTelemetry</a> و<a href="https://sre.google/workbook/table-of-contents/" target="_blank" rel="noopener">Google SRE Workbook</a> لعمليات القياس والموثوقية.</li>
+</ul>
+<div class="footer">أُعدّ هذا الدليل في 10 أكتوبر 2026. الروابط تقود إلى المصادر الأصلية حيث أمكن. حالات الإصدارات والرخص والمعايير قد تتغير؛ راجع المصدر الأصلي عند اعتماد قرار تقني أو تجاري. هذا دليل هندسي لا يمثل شهادة أمان أو اعتمادًا طبيًا أو استشارة قانونية.</div>
+</main>
+<script>
+const q=document.getElementById('q'), pri=document.getElementById('priority'), cards=[...document.querySelectorAll('.item')], buttons=[...document.querySelectorAll('.filter')]; let category='all';
+function apply(){const term=q.value.trim().toLowerCase(), p=pri.value;let n=0;for(const c of cards){const okText=!term||c.dataset.search.includes(term),okCat=category==='all'||c.dataset.cat===category,okPri=p==='all'||c.dataset.pri===p;const show=okText&&okCat&&okPri;c.classList.toggle('hidden',!show);if(show)n++;}document.getElementById('count').textContent=`عرض ${n} من ${cards.length} مصدرًا`;}
+q.addEventListener('input',apply);pri.addEventListener('change',apply);buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');category=b.dataset.filter;apply();}));apply();
+</script></body></html>

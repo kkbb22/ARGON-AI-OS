@@ -1,0 +1,51 @@
+artifact_id: C2-WAVE3.5-SECURITY-RECONCILIATION-v2
+cloud: C2
+wave: "3.5"
+repo_target: n/a  # generic AI-OS policy artifact, same scoping note as the threat model
+task_id: UNASSIGNED
+status: PROPOSED  # canonical policy recommendation, not approved governance
+implementation_status: DOCUMENTATION_ONLY
+evidence_status: DOCUMENTATION_ONLY
+enforcement_status: UNKNOWN  # explicit field added this version — nothing here is
+                              # runtime-enforced; Wave 4 has not started
+source_refs:
+  - type: prior_artifact
+    id: C2-WAVE3.5-AI-OS-THREAT-MODEL
+    description: RECON-1 through RECON-5 as identified in that document's §3
+    evidence_class: DOCUMENTATION_ONLY
+dependencies:
+  - C1: must design the actual cumulative-risk / approval-laundering detection
+      mechanism (§1.5); this document only states the requirement, not the mechanism
+  - C1: owns Kernel/Router implementation of every rule in §1 — none are enforced
+      by this document
+  - C6: owns implementation of the test cases in §5, several of which (RT-13) are
+      expected to fail until Wave 4 mechanisms exist
+  - C7: must independently verify these resolutions rather than accept them at face
+      value; this document is a recommendation, not a governance decision
+resolved_contradictions:
+  - id: RECON-1
+    resolution: solicited-vs-unsolicited execution distinguishes DENY from
+      REQUIRE_HUMAN_APPROVAL
+    status: PROPOSED
+  - id: RECON-2
+    resolution: plain push to isolated branch = REQUIRE_REVIEW; to shared branch =
+      REQUIRE_HUMAN_APPROVAL
+    status: PROPOSED
+  - id: RECON-3
+    resolution: merge isolated-to-shared = REQUIRE_HUMAN_APPROVAL, matches original
+      Mission 1 controlled-merge language
+    status: PROPOSED
+  - id: RECON-4
+    resolution: write-capable MCP tiered by target blast radius, same principle as Git
+    status: PROPOSED
+  - id: RECON-5
+    resolution: outbound-content rule has precedence over inbound-allowlist rule when
+      both apply
+    status: PROPOSED
+open_questions_carried_forward:
+  - cumulative-risk threshold values (numeric) — requires human decision
+  - Evidence-Store VERIFIED/PRODUCTION write as a formal hard gate — out of scope this
+    pass, still open
+  - repo-parametric policy (legacy vs argon-health differential risk) — still open
+  - what satisfies REQUIRE_REVIEW (human-only vs another Cloud) — still open
+next_owner: C7

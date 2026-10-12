@@ -1,0 +1,23 @@
+artifact_id: C2-CLOUD-SECURITY-ADAPTER-RESEARCH
+filename: C2-CLOUD-SECURITY-ADAPTER-RESEARCH.md
+cloud: C2
+wave: cloud-evolution-sprint
+
+system_scope: ai_engineering_os
+repository_target: none
+execution_target: deliverable_output
+
+task_id: UNASSIGNED
+
+status: DESIGNED
+implementation_status: NOT_IMPLEMENTED
+evidence_status: DOCUMENTATION_ONLY
+
+created_utc: "2026-09-21T09:06:55Z"
+
+supersedes:
+  - c2-cloud-security-adapter-research-correction-pass-v1  # fceb5bd2fb6f7c7643874f2ca4c985f5d28077b9ac0e70701702b21a5b59bc4a
+
+source_count: 14
+
+report_sha256: c6e95c268aa6b065737933cbeff10761939d8f310cb11db8b9907fb03d000b99

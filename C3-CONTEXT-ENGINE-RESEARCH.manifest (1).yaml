@@ -1,0 +1,61 @@
+artifact_id: C3-CONTEXT-ENGINE-RESEARCH
+filename: C3-CONTEXT-ENGINE-RESEARCH.md
+cloud: C3
+wave: cloud-evolution-sprint
+
+system_scope: ai_engineering_os
+repository_target: none
+execution_target: deliverable_output
+
+task_id: CLOUD-EVOLUTION-C3-FINAL-ARTIFACT-PACKAGING-HANDOFF
+status: DESIGNED
+implementation_status: NOT_IMPLEMENTED
+evidence_status: mixed — every OBSERVED claim resolves to an adjacent SOURCE line
+  (URL, section, access date); ARGON-side adaptations remain PROPOSAL; several
+  items are explicitly UNKNOWN / NEEDS EXPERIMENT (see report section 12); the
+  C7 v3 audit baseline a prior pass was asked to correct against does not exist
+  in this session — see the notice near the top of the report and the Finding
+  Matrix in section 11
+
+created_utc: "2026-09-21T09:06:03Z"
+packaged_utc: "2026-10-05T04:09:13Z"
+packaging_note: >
+  This pass (FINAL ARTIFACT PACKAGING & HANDOFF) made packaging/normalization
+  changes only: added a literal "## 0. Artifact Metadata (Packaging)" YAML
+  block to the .md mirroring this manifest's identity fields, and removed the
+  "(v3, Correction Pass)" suffix from the .md title to remove version
+  ambiguity (version identity now lives solely in this manifest's
+  `supersedes` list + report_sha256_value). No line in report sections 1-13
+  (the substantive research content) was added, removed, or reworded in this
+  pass — content_change: NONE. Because the metadata block and title edit
+  changed the file's bytes, report_sha256_value below was recomputed and the
+  prior hash was added to supersedes for traceability.
+supersedes:
+  - artifact_id: C3-CONTEXT-ENGINE-RESEARCH
+    version_note: "v1 (7 patterns, narrow source set)"
+    sha256: "f1e1fcd527c5eefa0fd6bf6bd335b7ac17363848795f8c7ed7c33bb9f6e6d110"
+  - artifact_id: C3-CONTEXT-ENGINE-RESEARCH
+    version_note: "v2 (full C3 priority source list, Cloud Capability Upgrade appendix; broken citation markup and a broken section cross-reference)"
+    sha256: "8cfd88270b47b8899303b935f97fc3eea7c89fb16d68274ec9549c143554a6e3"
+  - artifact_id: C3-CONTEXT-ENGINE-RESEARCH
+    version_note: "v3 (correction pass v1: citations/cross-reference/threshold/caveats/vendor-number fixes applied)"
+    sha256: "705e49290e8f365fe9d97a51f3c9462209877255e09ef5efd490fe19322815e0"
+  - artifact_id: C3-CONTEXT-ENGINE-RESEARCH
+    version_note: "pre-packaging (Final Correction Pass Before C7 v4 content: Section 11 4-column matrix, Section 12 consolidated UNKNOWNs, Section 13 hash contract) — superseded by this pass's metadata-only packaging edit; no content change"
+    sha256: "4778ae50ab4b716d5d03f860c0a3e52c5cfbb9ea82ae9d47f68da99e0b2db545"
+source_count: 22
+
+report_sha256: recorded_in_manifest
+report_sha256_value: "b48cbb0b6f1205e66eed9b738d7b5ff3fc6d4db1b10584739149577d2dc9042c"
+
+hash_note: >
+  Per the hash-contract instruction established in an earlier pass, the .md
+  file itself contains the literal line "report_sha256: recorded_in_manifest"
+  rather than attempting to embed its own hash (which would change its bytes
+  and invalidate the hash just computed). This manifest is the canonical
+  location for the real value, computed via sha256sum against the exact
+  final bytes of C3-CONTEXT-ENGINE-RESEARCH.md after this packaging pass's
+  edits (416 lines). If the .md file changes again, report_sha256_value must
+  be recomputed before the artifact is considered ready for transfer.
+
+next_owner: C7
