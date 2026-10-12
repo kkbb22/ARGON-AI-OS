@@ -1,0 +1,669 @@
+{
+  "system_scope": "ai_engineering_os",
+  "repository": "kkbb22/ARGON-AI-OS",
+  "intake_date_utc": "2026-10-12",
+  "auditor": "C7",
+  "total_source_files": 66,
+  "artifacts": [
+    {
+      "original_path": "ARGON-HEALTH-Assurance-Tracker (1).xlsx",
+      "destination_path": "archive/duplicates/ARGON-HEALTH-Assurance-Tracker (1).xlsx",
+      "raw_sha256": "72da4f1e6e12d84f104ca72d252646f46c2d7e752309b34e1cb70e92ba81df08",
+      "lf_normalized_sha256": "9d5661120325f1d94ca74563f658af6b7d7e1eee90741a75d8e01808c8546f19",
+      "size_bytes": 34488,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "ARGON-HEALTH-Assurance-Tracker (2).xlsx",
+      "destination_path": "archive/duplicates/ARGON-HEALTH-Assurance-Tracker (2).xlsx",
+      "raw_sha256": "72da4f1e6e12d84f104ca72d252646f46c2d7e752309b34e1cb70e92ba81df08",
+      "lf_normalized_sha256": "9d5661120325f1d94ca74563f658af6b7d7e1eee90741a75d8e01808c8546f19",
+      "size_bytes": 34488,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C2-CLOUD-SECURITY-ADAPTER-RESEARCH (1).md",
+      "destination_path": "archive/duplicates/C2-CLOUD-SECURITY-ADAPTER-RESEARCH (1).md",
+      "raw_sha256": "1e098296814c47eeb2a04508386ebbf2dce426d5cc19fc4473fd58be07574687",
+      "lf_normalized_sha256": "c6e95c268aa6b065737933cbeff10761939d8f310cb11db8b9907fb03d000b99",
+      "size_bytes": 78781,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C2-CLOUD-SECURITY-ADAPTER-RESEARCH.manifest (1).yaml",
+      "destination_path": "archive/duplicates/C2-CLOUD-SECURITY-ADAPTER-RESEARCH.manifest (1).yaml",
+      "raw_sha256": "9d2258f0b1e518e0851bab91d7e88c3a6b06dee4cb2c779f06cabb8bc51fc034",
+      "lf_normalized_sha256": "193bb80b31274fde9914d1edb6225d60da27b78c484e5e2e5fadb85dbc99bc93",
+      "size_bytes": 641,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C3-CONTEXT-ENGINE-RESEARCH (1).md",
+      "destination_path": "archive/duplicates/C3-CONTEXT-ENGINE-RESEARCH (1).md",
+      "raw_sha256": "acbea07c10b156206e15e5eb03d66fb0f5b0a4c1a2cdc24b9857933303fbde70",
+      "lf_normalized_sha256": "b48cbb0b6f1205e66eed9b738d7b5ff3fc6d4db1b10584739149577d2dc9042c",
+      "size_bytes": 52789,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C3-CONTEXT-ENGINE-RESEARCH.manifest (1).yaml",
+      "destination_path": "archive/duplicates/C3-CONTEXT-ENGINE-RESEARCH.manifest (1).yaml",
+      "raw_sha256": "d8cf54e1ca138fc200ba26c8a584cc9fb9d041463d18703be065585934686f2d",
+      "lf_normalized_sha256": "bb060a7f8a44172eb7981063e2b16a9cc630367f1a1e9e4fbd2a6e56bcb28713",
+      "size_bytes": 3477,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C4-SURGICAL-ENGINEERING-PROTOCOL (1).md",
+      "destination_path": "archive/duplicates/C4-SURGICAL-ENGINEERING-PROTOCOL (1).md",
+      "raw_sha256": "4bd492b56532c132246ca8f2b29481b9f125f60b25b2d6bde86269f5763fec03",
+      "lf_normalized_sha256": "441007bcbdce318b212d7f166fb344e18e72d92e5d0090f75718b9bc9ec01651",
+      "size_bytes": 48138,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C4-SURGICAL-ENGINEERING-PROTOCOL.manifest (1).yaml",
+      "destination_path": "archive/duplicates/C4-SURGICAL-ENGINEERING-PROTOCOL.manifest (1).yaml",
+      "raw_sha256": "9bb73b4b9b0aa36d457b39ec63ef4f069252ffbe471d010f06149224ea07939d",
+      "lf_normalized_sha256": "a92f036270a6942c380ee9b5e163b7d93f2172d03adc7b36e9434e9e89820b69",
+      "size_bytes": 1023,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C5-OPERATOR-CONTROL-RESEARCH (1).md",
+      "destination_path": "archive/duplicates/C5-OPERATOR-CONTROL-RESEARCH (1).md",
+      "raw_sha256": "34b99995a07745e06aa0cdf97298e89614109da91815bbdd297f3355a943c451",
+      "lf_normalized_sha256": "e70ea36bcab13b1abf76dbc386a82ca114a8c86c66f689d30224f1de71c9e1a8",
+      "size_bytes": 46074,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C5-OPERATOR-CONTROL-RESEARCH.manifest (1).yaml",
+      "destination_path": "archive/duplicates/C5-OPERATOR-CONTROL-RESEARCH.manifest (1).yaml",
+      "raw_sha256": "bef8ebb16986196039797a9c77202ca2af70daf668984b8f0ad7475d421c4554",
+      "lf_normalized_sha256": "f16e670f0df0a5fde4a7f375ca89461f66d4f9214ee814e69ac0815c54c4f0fb",
+      "size_bytes": 573,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE (1).md",
+      "destination_path": "archive/duplicates/C6-CLOUD-EVALUATION-ENGINE (1).md",
+      "raw_sha256": "63eb118033d391048c5644aba944583a94313f84d1712754826b23f2a87d9c34",
+      "lf_normalized_sha256": "d7924176708cb6f8752a10603b2d853d19136fb00db7b138c59862fbe6150db8",
+      "size_bytes": 51477,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE (3).md",
+      "destination_path": "archive/duplicates/C6-CLOUD-EVALUATION-ENGINE (3).md",
+      "raw_sha256": "b031787b432477af353acd21d6be130465a541c1e492744c14f2a55601650321",
+      "lf_normalized_sha256": "a0d762ad472f0e5fb6a891495a943ca808ac642ab5b7d3b9eab42fd0e237946a",
+      "size_bytes": 51421,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE (4).md",
+      "destination_path": "archive/duplicates/C6-CLOUD-EVALUATION-ENGINE (4).md",
+      "raw_sha256": "b031787b432477af353acd21d6be130465a541c1e492744c14f2a55601650321",
+      "lf_normalized_sha256": "a0d762ad472f0e5fb6a891495a943ca808ac642ab5b7d3b9eab42fd0e237946a",
+      "size_bytes": 51421,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE_manifest (1).yaml",
+      "destination_path": "archive/duplicates/C6-CLOUD-EVALUATION-ENGINE_manifest (1).yaml",
+      "raw_sha256": "cb52d30a6242514573e94e85b749f206ce3393b07b925e5fcfe2269937152947",
+      "lf_normalized_sha256": "442eb8f5ee4719a754112ccf0e1539893d5cce50d574801b5325d75aa2fec77c",
+      "size_bytes": 2081,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE_manifest (2).yaml",
+      "destination_path": "archive/duplicates/C6-CLOUD-EVALUATION-ENGINE_manifest (2).yaml",
+      "raw_sha256": "cb52d30a6242514573e94e85b749f206ce3393b07b925e5fcfe2269937152947",
+      "lf_normalized_sha256": "442eb8f5ee4719a754112ccf0e1539893d5cce50d574801b5325d75aa2fec77c",
+      "size_bytes": 2081,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE_manifest (3).yaml",
+      "destination_path": "archive/duplicates/C6-CLOUD-EVALUATION-ENGINE_manifest (3).yaml",
+      "raw_sha256": "cb52d30a6242514573e94e85b749f206ce3393b07b925e5fcfe2269937152947",
+      "lf_normalized_sha256": "442eb8f5ee4719a754112ccf0e1539893d5cce50d574801b5325d75aa2fec77c",
+      "size_bytes": 2081,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE_manifest (4).yaml",
+      "destination_path": "archive/duplicates/C6-CLOUD-EVALUATION-ENGINE_manifest (4).yaml",
+      "raw_sha256": "cb52d30a6242514573e94e85b749f206ce3393b07b925e5fcfe2269937152947",
+      "lf_normalized_sha256": "442eb8f5ee4719a754112ccf0e1539893d5cce50d574801b5325d75aa2fec77c",
+      "size_bytes": 2081,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C7-FINAL-FORENSIC-AUDIT-COMPLETE.md",
+      "destination_path": "archive/duplicates/C7-FINAL-FORENSIC-AUDIT-COMPLETE.md",
+      "raw_sha256": "09f2b7c38046d9be4dc7cefe123549261c472eea7b98acd05371f03652f32a9e",
+      "lf_normalized_sha256": "0268a767b37ed8bba1cce970732076fea625a9589e97e0b530800d3c421e2083",
+      "size_bytes": 9598,
+      "owner": "Unknown",
+      "classification": "DUPLICATE",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "%D8%AF%D9%84%D9%8A%D9%84_%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%AF%D8%B1_%D8%A7%D9%84%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9_ARGON.html",
+      "destination_path": "archive/external-health/%D8%AF%D9%84%D9%8A%D9%84_%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%AF%D8%B1_%D8%A7%D9%84%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9_ARGON.html",
+      "raw_sha256": "4b6050125c6e007416690b3153142d085bfbc9c81859ed61d5de1279bf83baaa",
+      "lf_normalized_sha256": "9d472cad6e4d59b06bcb3c7c5f276be8b318f3c2c1a03cc7844889c39b8fe887",
+      "size_bytes": 122080,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "%D8%AF%D9%84%D9%8A%D9%84_%D9%85%D8%B1%D8%A6%D9%8A_%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA_%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9_%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9.html",
+      "destination_path": "archive/external-health/%D8%AF%D9%84%D9%8A%D9%84_%D9%85%D8%B1%D8%A6%D9%8A_%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA_%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9_%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9.html",
+      "raw_sha256": "6c09122a6539353b49d964a663796ca1161c3f3223cb7e81861adc4f0aaa069d",
+      "lf_normalized_sha256": "d5cd0878864a7ba25c2bb603fa9a5724350dd76c6f363bc1da587d33287f17c9",
+      "size_bytes": 68790,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "%D8%AF%D9%84%D9%8A%D9%84_%D9%85%D8%B5%D8%A7%D8%AF%D8%B1_%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA_ARGON_%D9%88%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%86_%D9%88%D8%A7%D9%84%D8%A3%D8%AF%D8%A7%D8%A1.html",
+      "destination_path": "archive/external-health/%D8%AF%D9%84%D9%8A%D9%84_%D9%85%D8%B5%D8%A7%D8%AF%D8%B1_%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA_ARGON_%D9%88%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%86_%D9%88%D8%A7%D9%84%D8%A3%D8%AF%D8%A7%D8%A1.html",
+      "raw_sha256": "ef67701d3b7e105845c3d628c0d028dec399641a9a7b332087c1605b5ffded50",
+      "lf_normalized_sha256": "c39f72a8a1ecf4a95f4547f4747cf444460dc900967629bedfdb8d3a2a958d15",
+      "size_bytes": 108486,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "ARGON-ASSURANCE-MASTER-PLAN.md",
+      "destination_path": "archive/external-health/ARGON-ASSURANCE-MASTER-PLAN.md",
+      "raw_sha256": "09c3358f645016cddc8e6fefb644966c065b0865760c3487adefe387098e2ce4",
+      "lf_normalized_sha256": "8708ebac1645b9e636d9f1df86f002f0e2250b9fa99361d1bb7e09a1883ddeae",
+      "size_bytes": 11721,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "README.md",
+      "destination_path": "archive/external-health/ARGON-HEALTH-ASSURANCE-KIT-README.md",
+      "raw_sha256": "9db2d8fef606ccc128b6fa9d564d44125391fea8d96eb812ff8da3ba7a63d38b",
+      "lf_normalized_sha256": "b646d31f19ac9d843ac3bc3612e19fb47c183e375c17bfea1dd96f75d74fca69",
+      "size_bytes": 6137,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "ARGON-HEALTH-Assurance-Kit-SHA256.txt",
+      "destination_path": "archive/external-health/ARGON-HEALTH-Assurance-Kit-SHA256.txt",
+      "raw_sha256": "e9e50e6bd720c30cb7c0e26ced69d7eeaeb9f8209b89107b44b542ba8020ccb0",
+      "lf_normalized_sha256": "aa154f0d3e5d1694d6e67e81bedc95c74a002e2d5e48433a68164139c7b8ce6b",
+      "size_bytes": 103,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "ARGON-HEALTH-Assurance-Kit-v1.0.zip",
+      "destination_path": "archive/external-health/ARGON-HEALTH-Assurance-Kit-v1.0.zip",
+      "raw_sha256": "3d29243b5fda8589b561f449e3ba828e425d82b534e7cf51469b0a091c11b6e4",
+      "lf_normalized_sha256": "3d29243b5fda8589b561f449e3ba828e425d82b534e7cf51469b0a091c11b6e4",
+      "size_bytes": 83754,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "ARGON-HEALTH-Assurance-Tracker-Dashboard.png",
+      "destination_path": "archive/external-health/ARGON-HEALTH-Assurance-Tracker-Dashboard.png",
+      "raw_sha256": "4fffdb20a03d357bd83a46aca505e6857741649bc2f0d64211b0aeb73fb50fe4",
+      "lf_normalized_sha256": "08e09dfe6c966482a34e39b276f52148a52360f6227109e101e4373988a99aaa",
+      "size_bytes": 119720,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "ARGON-HEALTH-Assurance-Tracker.xlsx",
+      "destination_path": "archive/external-health/ARGON-HEALTH-Assurance-Tracker.xlsx",
+      "raw_sha256": "72da4f1e6e12d84f104ca72d252646f46c2d7e752309b34e1cb70e92ba81df08",
+      "lf_normalized_sha256": "9d5661120325f1d94ca74563f658af6b7d7e1eee90741a75d8e01808c8546f19",
+      "size_bytes": 34488,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "ARGON-HEALTH-main (3).zip",
+      "destination_path": "archive/external-health/ARGON-HEALTH-main (3).zip",
+      "raw_sha256": "62b2e677ec406c23f66423b486e119db49da9026c0133ba420d40dc17586e38e",
+      "lf_normalized_sha256": "81239e13aff4bba7e85482715293793b1bc7e3b62202b3b0d4d9b218abba2543",
+      "size_bytes": 642479,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "Screenshot 2026-10-09 151504.png",
+      "destination_path": "archive/external-health/Screenshot 2026-10-09 151504.png",
+      "raw_sha256": "22960ca48da1d3ecac719a568d14d532160e44b2c12b987ee793028b2565a9cc",
+      "lf_normalized_sha256": "3e9f8a06d5bb4901343536560af0d2e11b90e1d9b7aaad38fb8c9e6b8be07007",
+      "size_bytes": 189350,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "VERIFICATION-MATRIX.csv",
+      "destination_path": "archive/external-health/VERIFICATION-MATRIX.csv",
+      "raw_sha256": "96210a2bacee1c1ef6a4f132258d44a10810fde3d7bc20ef7be30f117981c569",
+      "lf_normalized_sha256": "eaee21eba0ecbdbaddd32346a458cce0f59ede209e90dff53f18efb926a78e5a",
+      "size_bytes": 23854,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "argon-assurance-merge-P0.zip",
+      "destination_path": "archive/external-health/argon-assurance-merge-P0.zip",
+      "raw_sha256": "65f60f9ed02d8ebb27b54798d0d013191a4432636c05e9c273bb61e5eeb331d9",
+      "lf_normalized_sha256": "65f60f9ed02d8ebb27b54798d0d013191a4432636c05e9c273bb61e5eeb331d9",
+      "size_bytes": 86740,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "healthcare_systems_global_analysis_ar.docx",
+      "destination_path": "archive/external-health/healthcare_systems_global_analysis_ar.docx",
+      "raw_sha256": "86c213f7e28f23f2dfb7b0c6c90e5679ec124c46e401a92951a8ada7a4ba2de2",
+      "lf_normalized_sha256": "6738d0b1b2b1fd0efa06e3cb24903ee065cfe37f6e291dd0bf9a6683d5fad646",
+      "size_bytes": 60185,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "healthcare_systems_global_analysis_ar.pdf",
+      "destination_path": "archive/external-health/healthcare_systems_global_analysis_ar.pdf",
+      "raw_sha256": "6eb37e380c73f73a39882efa345f952812e5c67231312ad7dc99633b998fcd64",
+      "lf_normalized_sha256": "6eb37e380c73f73a39882efa345f952812e5c67231312ad7dc99633b998fcd64",
+      "size_bytes": 377042,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "\u0627\u0644\u062f\u0644\u064a\u0644 \u0627\u0644\u0645\u0631\u0626\u064a \u0644\u0648\u0627\u062c\u0647\u0627\u062a \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0637\u0628\u064a\u0629 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629.pdf",
+      "destination_path": "archive/external-health/\u0627\u0644\u062f\u0644\u064a\u0644 \u0627\u0644\u0645\u0631\u0626\u064a \u0644\u0648\u0627\u062c\u0647\u0627\u062a \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0637\u0628\u064a\u0629 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629.pdf",
+      "raw_sha256": "da2fc91c305456831eb45109aa145df15be5a323190fb0497cebfc15039dd874",
+      "lf_normalized_sha256": "c85c0b7d9d834c754662dac807b5a690b7f5c4d075401e3df069f84bfcbf5e0b",
+      "size_bytes": 10300910,
+      "owner": "ARGON-HEALTH",
+      "classification": "EXTERNAL_CONTEXT",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C1-WAVE3.5-CORRECTION-v2.manifest.yaml",
+      "destination_path": "archive/historical/wave3.5/C1-WAVE3.5-CORRECTION-v2.manifest.yaml",
+      "raw_sha256": "ed82a0bac1ac068c1672b5a7fe0ca2bce220b446bdf91119b0286ba705e3e5c2",
+      "lf_normalized_sha256": "e64d62fd08174d25afee01c2ecf9736cc431adad77d2fa9469df06a1db0100c4",
+      "size_bytes": 1845,
+      "owner": "C1",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C1-WAVE3.5-CORRECTION-v2.md",
+      "destination_path": "archive/historical/wave3.5/C1-WAVE3.5-CORRECTION-v2.md",
+      "raw_sha256": "e99620caa11a3e5e1b9aa4bc08856167728933535ac5af20005c0678f9d28127",
+      "lf_normalized_sha256": "2a52518699edbcf30ae4b76c9f780a748eab74a4f399c74644f9c9d388776a1a",
+      "size_bytes": 15096,
+      "owner": "C1",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C2-WAVE3.5-SECURITY-RECONCILIATION-v2.manifest.yaml",
+      "destination_path": "archive/historical/wave3.5/C2-WAVE3.5-SECURITY-RECONCILIATION-v2.manifest.yaml",
+      "raw_sha256": "175ddf25ab98fe04c086d88e3e7694c3828b69253e674fc614c479cd2313f33e",
+      "lf_normalized_sha256": "2da3455e4d8349de148933bdcb014661cd8511a74db47537282d769a302f2853",
+      "size_bytes": 2458,
+      "owner": "C2",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C2-WAVE3.5-SECURITY-RECONCILIATION-v2.md",
+      "destination_path": "archive/historical/wave3.5/C2-WAVE3.5-SECURITY-RECONCILIATION-v2.md",
+      "raw_sha256": "7a85ee2c57a86ab5f95c41e9baeb1d461796b3eeb490179e6b0b63fe782a47d5",
+      "lf_normalized_sha256": "7b59fcfc49d0408461717cb055f3f7e81c4faecde1f0e5cdbea47b83a2f44f51",
+      "size_bytes": 12276,
+      "owner": "C2",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C3-WAVE3.5-KNOWLEDGE-v2.manifest.yaml",
+      "destination_path": "archive/historical/wave3.5/C3-WAVE3.5-KNOWLEDGE-v2.manifest.yaml",
+      "raw_sha256": "1fe9573cbd11f2a820da1093fff6e0062baaa92414868608924d31864fa443fb",
+      "lf_normalized_sha256": "10382e59b681c7ce30cdbca6074eff9122f2d5626dc227f800fc10d1e40861e4",
+      "size_bytes": 3614,
+      "owner": "C3",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C3-WAVE3.5-KNOWLEDGE-v2.md",
+      "destination_path": "archive/historical/wave3.5/C3-WAVE3.5-KNOWLEDGE-v2.md",
+      "raw_sha256": "85b0e122ff77509781b34fe303395ab79e65f5a38eaef98188eb9517e5c5820d",
+      "lf_normalized_sha256": "a0cd596786f580311bd27e0a5210d2ee6f9cca1e412dabf8fb34e0542fee1ce9",
+      "size_bytes": 17195,
+      "owner": "C3",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C4-WAVE3.5-CONTEXT-v2.manifest.yaml",
+      "destination_path": "archive/historical/wave3.5/C4-WAVE3.5-CONTEXT-v2.manifest.yaml",
+      "raw_sha256": "517ab2255408edb61509c3354490fb326cad585a6987f178a6e656ac48bbf672",
+      "lf_normalized_sha256": "a2af752c7dcf1b934d25a29c967f4e179ebc42513ff5d6b2e368428b5ca844bb",
+      "size_bytes": 3628,
+      "owner": "C4",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C5-WAVE3.5-OPERATOR-v2.manifest.yaml",
+      "destination_path": "archive/historical/wave3.5/C5-WAVE3.5-OPERATOR-v2.manifest.yaml",
+      "raw_sha256": "9010de7d2afe17e5988c3cd7755146b717113043f0621cfad7a78d712d43a6b1",
+      "lf_normalized_sha256": "8af62c75e0f038f85e6e0d66fa143a6cc0b8022d3ca9aed5bd1711c800039bf9",
+      "size_bytes": 2446,
+      "owner": "C5",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C5-WAVE3.5-OPERATOR-v2.md",
+      "destination_path": "archive/historical/wave3.5/C5-WAVE3.5-OPERATOR-v2.md",
+      "raw_sha256": "178e4330b91b42d66eb60fe7a9db3b5fdd483a5be6782054b9a15346b3b85891",
+      "lf_normalized_sha256": "9d2a55a4ba61964f78eaea297f8ce2f6f29129dd5682a7bec93af46ae884fd2a",
+      "size_bytes": 9604,
+      "owner": "C5",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C6-WAVE3.5-VERIFICATION-MASTER.md",
+      "destination_path": "archive/historical/wave3.5/C6-WAVE3.5-VERIFICATION-MASTER.md",
+      "raw_sha256": "c0c998b7b45d6f4916e092e88e096df340cab06efa61a66237d7756ac9e2c91a",
+      "lf_normalized_sha256": "f3a439bd74809670d0f8a11032866c86f285a4dbba9fe5c3196397cb2fb350cf",
+      "size_bytes": 18608,
+      "owner": "C6",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE.md",
+      "destination_path": "archive/superseded/C6-CLOUD-EVALUATION-ENGINE.whitespace-variant.md",
+      "raw_sha256": "63eb118033d391048c5644aba944583a94313f84d1712754826b23f2a87d9c34",
+      "lf_normalized_sha256": "d7924176708cb6f8752a10603b2d853d19136fb00db7b138c59862fbe6150db8",
+      "size_bytes": 51477,
+      "owner": "Unknown",
+      "classification": "SUPERSEDED",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C7-FFA-003.md",
+      "destination_path": "assurance/audits/C7-FFA-003.md",
+      "raw_sha256": "6f6ea0ea0db3736a8159cfd70673efc92061791b8783df5b269ad5f42e3fd8b0",
+      "lf_normalized_sha256": "6ad46d60c08c71804e5efc3081f13ab0dbd53d83860c5924e888e26ffe0ccba7",
+      "size_bytes": 15538,
+      "owner": "C7",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C2-FUTURE-SECURITY-CAPABILITY-PACKS.manifest.yaml",
+      "destination_path": "capabilities/future/C2/C2-FUTURE-SECURITY-CAPABILITY-PACKS.manifest.yaml",
+      "raw_sha256": "08f6cdf238aba24379d8ff10c36543eff1b27230f7ec15086625989b4a59499d",
+      "lf_normalized_sha256": "05fd3ca239cfaf73fc324e9e102bdcf230daf354d101ac4cb847c5d16a3318b4",
+      "size_bytes": 1142,
+      "owner": "C2",
+      "classification": "CURRENT_SUPPORTING",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C2-FUTURE-SECURITY-CAPABILITY-PACKS.md",
+      "destination_path": "capabilities/future/C2/C2-FUTURE-SECURITY-CAPABILITY-PACKS.md",
+      "raw_sha256": "bad31bb151aba5992effafb8a30596a1faaa9f43f5cf824398eda9dc5a961dad",
+      "lf_normalized_sha256": "8d6148bfc92e8d29bdea80feb877727a84d2d214a381a849d879c7759359cc38",
+      "size_bytes": 59129,
+      "owner": "C2",
+      "classification": "CURRENT_SUPPORTING",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C3-FUTURE-CONTEXT-CAPABILITY-PACKS.md",
+      "destination_path": "capabilities/future/C3/C3-FUTURE-CONTEXT-CAPABILITY-PACKS.md",
+      "raw_sha256": "2b0f1f21a39dee6f77b5a3c7b6f62f55555a3c1c674c27eeddec8040a0b369c6",
+      "lf_normalized_sha256": "bb0568be6f7d4724616f9865682c8cf6624a941accf86c8f94d7cfeb9b1783cf",
+      "size_bytes": 40531,
+      "owner": "C3",
+      "classification": "CURRENT_SUPPORTING",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C4-FUTURE-ENGINEERING-CAPABILITY-PACKS.md",
+      "destination_path": "capabilities/future/C4/C4-FUTURE-ENGINEERING-CAPABILITY-PACKS.md",
+      "raw_sha256": "268de598e152c23cd0fd83bcce936c8191df03b13e94dd93477996cafc363e4e",
+      "lf_normalized_sha256": "483cc77e9cbe1298c310bfb9b971ec7dacef0c741701a8db30206951a6cd9138",
+      "size_bytes": 34292,
+      "owner": "C4",
+      "classification": "CURRENT_SUPPORTING",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C5-FUTURE-HUMAN-CONTROL-CAPABILITY-PACKS-v2.manifest.yaml",
+      "destination_path": "capabilities/future/C5/C5-FUTURE-HUMAN-CONTROL-CAPABILITY-PACKS-v2.manifest.yaml",
+      "raw_sha256": "fe519e73583322e4167c94aaaf6d26e01a751291c36390c0c58ee323e4fb5dbc",
+      "lf_normalized_sha256": "c4e8a121941a299e0125705a401189dbe4e4e0255190ada61de2d9a6dfa46802",
+      "size_bytes": 755,
+      "owner": "C5",
+      "classification": "CURRENT_SUPPORTING",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C5-FUTURE-HUMAN-CONTROL-CAPABILITY-PACKS-v2.md",
+      "destination_path": "capabilities/future/C5/C5-FUTURE-HUMAN-CONTROL-CAPABILITY-PACKS-v2.md",
+      "raw_sha256": "6627404ee309e566f488f5d3cb0587976f3fe1a3ba80adafefba751394870994",
+      "lf_normalized_sha256": "744a1c6295ee27ec225d4ddff83a60c61221adb2e99a4a08107dfadbb925bff0",
+      "size_bytes": 15481,
+      "owner": "C5",
+      "classification": "CURRENT_SUPPORTING",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "C1-CLOUD-HARNESS-ADAPTER-RESEARCH.manifest.yaml",
+      "destination_path": "clouds/C1/C1-CLOUD-HARNESS-ADAPTER-RESEARCH.manifest.yaml",
+      "raw_sha256": "24fbec4444f0c2f055ed41d0824affdb92115b30e3bc80b15d49764b53524a89",
+      "lf_normalized_sha256": "64d7db55b1bc29fbe6ee0728683abf0083bacf7a7e1668c20883eea7ef752f0b",
+      "size_bytes": 2825,
+      "owner": "C1",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C1-CLOUD-HARNESS-ADAPTER-RESEARCH.md",
+      "destination_path": "clouds/C1/C1-CLOUD-HARNESS-ADAPTER-RESEARCH.md",
+      "raw_sha256": "36f91407949a4f501ca28b8a70ae613733d5412dae5ec71dade36edaef1431d9",
+      "lf_normalized_sha256": "24e8cdb1cb8a088f146ff97265a484a329544b6a13d3bdfafea00de9f5dc688f",
+      "size_bytes": 59119,
+      "owner": "C1",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C2-CLOUD-SECURITY-ADAPTER-RESEARCH.manifest.yaml",
+      "destination_path": "clouds/C2/C2-CLOUD-SECURITY-ADAPTER-RESEARCH.manifest.yaml",
+      "raw_sha256": "9d2258f0b1e518e0851bab91d7e88c3a6b06dee4cb2c779f06cabb8bc51fc034",
+      "lf_normalized_sha256": "193bb80b31274fde9914d1edb6225d60da27b78c484e5e2e5fadb85dbc99bc93",
+      "size_bytes": 641,
+      "owner": "C2",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C2-CLOUD-SECURITY-ADAPTER-RESEARCH.md",
+      "destination_path": "clouds/C2/C2-CLOUD-SECURITY-ADAPTER-RESEARCH.md",
+      "raw_sha256": "1e098296814c47eeb2a04508386ebbf2dce426d5cc19fc4473fd58be07574687",
+      "lf_normalized_sha256": "c6e95c268aa6b065737933cbeff10761939d8f310cb11db8b9907fb03d000b99",
+      "size_bytes": 78781,
+      "owner": "C2",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C3-CONTEXT-ENGINE-RESEARCH.manifest.yaml",
+      "destination_path": "clouds/C3/C3-CONTEXT-ENGINE-RESEARCH.manifest.yaml",
+      "raw_sha256": "d8cf54e1ca138fc200ba26c8a584cc9fb9d041463d18703be065585934686f2d",
+      "lf_normalized_sha256": "bb060a7f8a44172eb7981063e2b16a9cc630367f1a1e9e4fbd2a6e56bcb28713",
+      "size_bytes": 3477,
+      "owner": "C3",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C3-CONTEXT-ENGINE-RESEARCH.md",
+      "destination_path": "clouds/C3/C3-CONTEXT-ENGINE-RESEARCH.md",
+      "raw_sha256": "acbea07c10b156206e15e5eb03d66fb0f5b0a4c1a2cdc24b9857933303fbde70",
+      "lf_normalized_sha256": "b48cbb0b6f1205e66eed9b738d7b5ff3fc6d4db1b10584739149577d2dc9042c",
+      "size_bytes": 52789,
+      "owner": "C3",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C4-SURGICAL-ENGINEERING-PROTOCOL.manifest.yaml",
+      "destination_path": "clouds/C4/C4-SURGICAL-ENGINEERING-PROTOCOL.manifest.yaml",
+      "raw_sha256": "9bb73b4b9b0aa36d457b39ec63ef4f069252ffbe471d010f06149224ea07939d",
+      "lf_normalized_sha256": "a92f036270a6942c380ee9b5e163b7d93f2172d03adc7b36e9434e9e89820b69",
+      "size_bytes": 1023,
+      "owner": "C4",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C4-SURGICAL-ENGINEERING-PROTOCOL.md",
+      "destination_path": "clouds/C4/C4-SURGICAL-ENGINEERING-PROTOCOL.md",
+      "raw_sha256": "4bd492b56532c132246ca8f2b29481b9f125f60b25b2d6bde86269f5763fec03",
+      "lf_normalized_sha256": "441007bcbdce318b212d7f166fb344e18e72d92e5d0090f75718b9bc9ec01651",
+      "size_bytes": 48138,
+      "owner": "C4",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C5-OPERATOR-CONTROL-RESEARCH.manifest.yaml",
+      "destination_path": "clouds/C5/C5-OPERATOR-CONTROL-RESEARCH.manifest.yaml",
+      "raw_sha256": "bef8ebb16986196039797a9c77202ca2af70daf668984b8f0ad7475d421c4554",
+      "lf_normalized_sha256": "f16e670f0df0a5fde4a7f375ca89461f66d4f9214ee814e69ac0815c54c4f0fb",
+      "size_bytes": 573,
+      "owner": "C5",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C5-OPERATOR-CONTROL-RESEARCH.md",
+      "destination_path": "clouds/C5/C5-OPERATOR-CONTROL-RESEARCH.md",
+      "raw_sha256": "34b99995a07745e06aa0cdf97298e89614109da91815bbdd297f3355a943c451",
+      "lf_normalized_sha256": "e70ea36bcab13b1abf76dbc386a82ca114a8c86c66f689d30224f1de71c9e1a8",
+      "size_bytes": 46074,
+      "owner": "C5",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE_manifest.yaml",
+      "destination_path": "clouds/C6/C6-CLOUD-EVALUATION-ENGINE.manifest.yaml",
+      "raw_sha256": "cb52d30a6242514573e94e85b749f206ce3393b07b925e5fcfe2269937152947",
+      "lf_normalized_sha256": "442eb8f5ee4719a754112ccf0e1539893d5cce50d574801b5325d75aa2fec77c",
+      "size_bytes": 2081,
+      "owner": "C6",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "C6-CLOUD-EVALUATION-ENGINE (2).md",
+      "destination_path": "clouds/C6/C6-CLOUD-EVALUATION-ENGINE.md",
+      "raw_sha256": "b031787b432477af353acd21d6be130465a541c1e492744c14f2a55601650321",
+      "lf_normalized_sha256": "a0d762ad472f0e5fb6a891495a943ca808ac642ab5b7d3b9eab42fd0e237946a",
+      "size_bytes": 51421,
+      "owner": "C6",
+      "classification": "CANONICAL",
+      "canonical_hash_verified": true
+    },
+    {
+      "original_path": "ARGON_AI_OS_MASTER_HANDOFF_AR.md",
+      "destination_path": "docs/ARGON_AI_OS_MASTER_HANDOFF_AR.md",
+      "raw_sha256": "f8607dbbb86211ceb2a61606c43d01a183c09dccc4d169edca08e8f251fc3e8e",
+      "lf_normalized_sha256": "58e1e429fa7a206e80ead1331e60bb5729b144cda345162e8d906ef383566916",
+      "size_bytes": 57398,
+      "owner": "Operator/Handoff",
+      "classification": "CURRENT_SUPPORTING",
+      "canonical_hash_verified": false
+    },
+    {
+      "original_path": "ARGON_AI_OS_HANDOFF_PACKAGE.zip",
+      "destination_path": "evidence/handoff/ARGON_AI_OS_HANDOFF_PACKAGE.zip",
+      "raw_sha256": "ce9464b8f3578337e43084af8183416376b98011f83c8a0be4b68f915b978cf5",
+      "lf_normalized_sha256": "9b7621fa59e4eaa322ddb6bb5f26fe65f0af3eb5efcb6e36439e78d27becd9ea",
+      "size_bytes": 100790,
+      "owner": "Unknown",
+      "classification": "CURRENT_SUPPORTING",
+      "canonical_hash_verified": false
+    }
+  ]
+}
