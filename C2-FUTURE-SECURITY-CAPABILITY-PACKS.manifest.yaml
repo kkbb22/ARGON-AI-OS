@@ -1,0 +1,29 @@
+artifact_id: C2-FUTURE-SECURITY-CAPABILITY-PACKS
+filename: C2-FUTURE-SECURITY-CAPABILITY-PACKS.md
+cloud: C2
+wave: UNKNOWN  # not stated in the task; baseline wave was cloud-evolution-sprint
+
+system_scope: ai_engineering_os
+repository_target: none
+execution_target: deliverable_output
+
+task_id: UNASSIGNED
+
+status: DESIGNED
+implementation_status: NOT_IMPLEMENTED
+evidence_status: DOCUMENTATION_ONLY
+
+created_utc: "2026-10-12T05:57:40Z"
+
+supersedes:
+  - c2-future-security-capability-packs-baseline-less-draft  # 2d16f91b45c84b137e2131bb782eb4e5b7a53310fe1ce38e6ad21a5ff99f86b2 (own earlier output, not canonical)
+
+source_count: 10  # register entries S1-S10; S9 is vendor-only and not relied on
+
+report_sha256: 8d6148bfc92e8d29bdea80feb877727a84d2d214a381a849d879c7759359cc38
+
+input_integrity_recheck:
+  C2-CLOUD-SECURITY-ADAPTER-RESEARCH.md: c6e95c268aa6b065737933cbeff10761939d8f310cb11db8b9907fb03d000b99
+  C2-CLOUD-SECURITY-ADAPTER-RESEARCH.manifest: 193bb80b31274fde9914d1edb6225d60da27b78c484e5e2e5fadb85dbc99bc93
+  baseline_report_sha256_matches_its_manifest: true
+  inputs_unchanged_since_first_read: true

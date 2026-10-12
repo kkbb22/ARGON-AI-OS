@@ -1,0 +1,18 @@
+artifact_id: C5-FUTURE-HUMAN-CONTROL-CAPABILITY-PACKS-v2
+filename: C5-FUTURE-HUMAN-CONTROL-CAPABILITY-PACKS-v2.md
+cloud: C5
+wave: cloud-evolution-sprint
+system_scope: ai_engineering_os
+repository_target: none
+execution_target: deliverable_output
+status: DESIGNED
+implementation_status: NOT_IMPLEMENTED
+evidence_status: PARTIAL
+created_utc: 2026-10-12
+additive_to: C5-OPERATOR-CONTROL-RESEARCH-v4
+supersedes_by_reference: C5-FUTURE-HUMAN-CONTROL-CAPABILITY-PACKS-v1
+inputs_hash_checked_match: [C2, C3, C4, C5, C6]
+inputs_not_supplied: [C1, wave-3.5-operator-control-spec, C2-WAVE3.5-SECURITY-RECONCILIATION-v2]
+sources_reopened_this_run: 0
+tests_executed: 0
+report_sha256: 744a1c6295ee27ec225d4ddff83a60c61221adb2e99a4a08107dfadbb925bff0
