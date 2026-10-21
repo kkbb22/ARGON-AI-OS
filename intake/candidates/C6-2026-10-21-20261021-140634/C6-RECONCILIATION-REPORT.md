@@ -44,7 +44,7 @@ The manifest `report_sha256` equals both `sha256sum` and Python `hashlib` of the
 **Not run:** any test in the pack; any mutant; any link check on a branch; any privacy diff scan (no diff exists; the integration owner owns that).
 
 ## 6. Unresolved dependencies (unchanged by this pass)
-1. Source TXT `c2-c6(1).TXT` not provided: raw extraction, TXT hash, and range 1771–2240 unverified (declared values kept in a separate manifest block).
+1. Source TXT `c2-c6(1).TXT` supplied. The exact container SHA-256 matches the declared value, and its embedded C6 v1 Markdown (source lines 1771–2201) normalizes to the v1 manifest digest. The current v3 candidate is a later derivative; v1-to-v3 semantic change review remains required.
 2. Canonical definitions of `source_status`/`inert` (found only in a superseded C3 file); Context Packet / Repository Snapshot schemas.
 3. C2 precedence/classification feed in a canonical artifact; RP-13 mechanisms and whether to build binding (OQ-01, DEP-09).
 4. The "normalized Plan/Act mutation matrix" is not in the repository tree; 5-vs-6 vector taxonomy (OQ-03) open for C1.
@@ -53,4 +53,14 @@ The manifest `report_sha256` equals both `sha256sum` and Python `hashlib` of the
 7. Wave 4 runtime does not exist; C1 synthesis v2 (DEP-03) not touched; future packs dormant until it is approved.
 
 ## 7. Next required action
-Integration owner reviews this candidate together with the other Clouds' candidates and, only if accepted, places it on a review branch and updates the index and registers once, serially; the human owner approves or rejects each open threshold. Supply the source TXT to reconcile the extraction range.
+Integration owner reviews this candidate together with the other Clouds' candidates and, only if accepted, places it on a review branch and updates the index and registers once, serially; the human owner approves or rejects each open threshold. Source TXT supplied and cross-checked; review the v1-to-v3 semantic changes and remaining open dependencies before any acceptance.
+
+## 8. Source-container reconciliation update (2026-10-21)
+
+- Raw c2-c6(1).TXT SHA-256 independently verified: $SourceHash (221,902 bytes).
+- Source has 2,240 CRLF newline terminators and 2,241 logical lines because the last logical line is not terminated.
+- The C6 v1 Markdown body is lines 1771–2201 (431 lines). Raw CRLF SHA-256: $bodyRawHash; after CRLF-to-LF normalization: $bodyLfHash, matching the v1 companion-manifest digest.
+- The declared range 1771–2240 is archived byte-for-byte with SHA-256 $rangeHash. The final unterminated logical line 2241 lies outside that declared range.
+- The current v3 candidate is a revision of v1, not an identical copy. Its updated content SHA-256 is $newMdHash; the companion manifest records this current hash and separately records the v1 source hash.
+- Evidence archive: `evidence/intake/C6-SOURCE-RECONCILIATION-20261021-143219.zip`.
+- This closes the specific missing-source-container/hash blocker only. C6 remains DESIGNED / NOT_IMPLEMENTED / TEST SPECIFIED, NOT ACCEPTED; no runtime test is claimed as executed.
