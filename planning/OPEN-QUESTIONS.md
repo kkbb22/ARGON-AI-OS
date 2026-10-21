@@ -26,12 +26,12 @@ This register tracks all unresolved architectural tensions, open experimental qu
 - **Origin:** C7 Audit Gate 4 (Finding Divergence).
 - **Description:** C1 and C2 agree that the 5th mutation vector is "indirect mutation via a nested tool call". C4 defines it as "argument-injection into an ostensibly read-only tool".
 - **Impact:** Minor wording/taxonomy divergence. Non-blocking for synthesis, but C1 must harmonize the definition in `ARGON-AI-OS-CROSS-CLOUD-SYNTHESIS.v2.md`.
-- **Status:** `OPEN FOR C1 SYNTHESIS`.
+- **Status:** `DRAFT RESOLUTION IN C1 v2; PENDING C7 REVIEW`.
 
 ### [OQ-04] SWE-bench Lite 10.7pp Citation Sourcing Note
 - **Origin:** C7 Audit Gate 3 (Spot Check S2).
 - **Description:** C1 removed a "+10.7 percentage points SWE-bench Lite" figure as unconfirmable, whereas C7 verified that the phrase appears verbatim in the primary NeurIPS paper. However, the paper's table shows a 7.0-point gap (18.00% vs 11.00%), creating an internal tension in the cited paper itself.
-- **Status:** `MINOR SOURCING NOTE` for C1.
+- **Status:** `CAVEAT INCLUDED IN C1 v2 DRAFT; PENDING C7 REVIEW`.
 
 ---
 
