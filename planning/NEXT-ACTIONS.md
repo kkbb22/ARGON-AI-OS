@@ -17,13 +17,15 @@ This document outlines the strictly sequenced next actions required to progress 
      - Preserve the `NEEDS EXPERIMENT` status of RP-13 and delegation depth.
      - **Do NOT alter canonical research files.**
 
-2. **[ACTION-02] Author C6 Future Capability Packs**
+2. **[ACTION-02] Author C6 Future Capability Packs — COMPLETE (design deliverable only)**
    - **Owner:** C6 (Evaluation Specialist)
-   - **Target Deliverable:** `capabilities/future/C6/C6-FUTURE-EVALUATION-CAPABILITY-PACKS.md`
-   - **Prerequisites:** Canonical C6 Evaluation Engine (`clouds/C6/C6-CLOUD-EVALUATION-ENGINE.md`).
+   - **Canonical Design Deliverable:** `capabilities/future/C6/C6-FUTURE-EVALUATION-CAPABILITY-PACKS.md` + companion manifest.
+   - **Acceptance record:** `governance/decisions/C6-DESIGN-ONLY-ACCEPTANCE-2026-10-21.md`.
+   - **Accepted boundary:** Documentation/design only. All five packs remain `DESIGNED` / `NOT_IMPLEMENTED` / `TEST SPECIFIED`; `TEST EXECUTED = 0`; `PASS WITH EVIDENCE = 0`.
+   - **Remaining blockers:** C1 Synthesis v2 and its C7 audit remain prerequisites to Wave 4; the evaluation harness is only `DESIGNED`; interface contracts and `THRESHOLD NOT SET` items remain open.
+   - **Authorization:** Closing this authoring action does not authorize runtime/Wave 4 execution or close DEP-06, DEP-09, or the security experiments.
 
 ---
-
 ## Phase 2: Post-Synthesis Assurance (Phase E)
 
 3. **[ACTION-03] Independent Forensic Audit of Synthesis v2**
