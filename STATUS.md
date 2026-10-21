@@ -30,8 +30,8 @@ The immediate project bottleneck is the completion of **C1 Cross-Cloud Synthesis
 | **C4 Future Capability Packs** | C4 | `CURRENT_SUPPORTING` | `NOT_IMPLEMENTED` | `TEST SPECIFIED` | Awaiting v2 synthesis approval |
 | **C5 Operator Control** | C5 | `CANONICAL` Verified | `NOT_IMPLEMENTED` | `TEST SPECIFIED` (Approval UX) | Missing v1 reference file (cited in v2) |
 | **C5 Future Capability Packs** | C5 | `CURRENT_SUPPORTING` | `NOT_IMPLEMENTED` | `TEST SPECIFIED` | Awaiting v2 synthesis approval |
-| **C6 Evaluation Engine** | C6 | `CANONICAL` Verified | `NOT_IMPLEMENTED` | `TEST SPECIFIED` (Cost/Eval harness) | C6 Future Capability Packs **MISSING** |
-| **C6 Future Capability Packs** | C6 | `PENDING` (Not in repo) | `NOT_IMPLEMENTED` | None | Must be authored by C6 |
+| **C6 Evaluation Engine** | C6 | `CANONICAL` Verified | `NOT_IMPLEMENTED` | `TEST SPECIFIED` (Cost/Eval harness) | Future capability design is now documented; evaluation harness/runtime and test execution remain not implemented; C1 synthesis and Wave 4 gates remain open |
+| **C6 Future Capability Packs** | C6 | `CURRENT_SUPPORTING` (canonical design-only) | `NOT_IMPLEMENTED` | `TEST SPECIFIED` (0 executed; 0 PASS WITH EVIDENCE) | Dormant until C1 Synthesis v2 is completed and approved; harness, interfaces, and thresholds remain open |
 | **C7 Forensic Audit** | C7 | `CANONICAL` Verified | Complete | Complete | Closed Gate 1, 3, 4, 9 in `C7-FFA-003.md` |
 
 ---
@@ -53,8 +53,8 @@ The immediate project bottleneck is the completion of **C1 Cross-Cloud Synthesis
 
 1. **C1 v2 Cross-Cloud Synthesis Unwritten:**
    - The project cannot transition to Wave 4 implementation planning until C1 authors `ARGON-AI-OS-CROSS-CLOUD-SYNTHESIS.v2.md` using the canonical inputs approved in `C7-FFA-003.md`.
-2. **Missing C6 Future Capability Packs:**
-   - C2, C3, C4, and C5 have uploaded future packs; C6 has not submitted its evaluation future capability pack.
+2. **C6 Future Capability Packs — design-only:**
+   - The canonical supporting design is now present. All five packs remain `NOT_IMPLEMENTED`; tests remain `TEST SPECIFIED` (0 executed, 0 `PASS WITH EVIDENCE`). No implementation readiness or Wave 4 authorization is implied.
 3. **Missing Wave 3.5 C4 Context Markdown:**
    - `C4-WAVE3.5-CONTEXT-v2.manifest.yaml` exists, but its corresponding `.md` file was never uploaded.
 4. **Open Experimental Questions (Non-blocking for synthesis, blocking for implementation):**
