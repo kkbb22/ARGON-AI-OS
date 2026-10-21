@@ -81,10 +81,10 @@ All repository copies of C1–C6, C7-FFA-003, and the two Wave 3.5 files are **b
 
 ### 1.3 The source TXT container — received and cross-checked
 
-The exact source container historically referenced as c2-c6(1).TXT was supplied locally as c2-c6.TXT; its raw-byte SHA-256 independently recomputes to $ExpectedSourceHash (221,902 bytes). The file contains 2,240 CRLF line terminators and 2,241 logical lines because the final logical line is not terminated by a newline.
+The exact source container historically referenced as c2-c6(1).TXT was supplied locally as c2-c6.TXT; its raw-byte SHA-256 independently recomputes to a542be977e7af20dfe90be08585b1a05e094351805a0d8c9dcb22301b2d0039a (221,902 bytes). The file contains 2,240 CRLF line terminators and 2,241 logical lines because the final logical line is not terminated by a newline.
 
-- The declared transfer range is lines 1771–2240. Its exact raw-byte range SHA-256 is $rangeHash (45,509 bytes); the range is preserved in the supplemental source-evidence ZIP at `evidence/intake/C6-SOURCE-RECONCILIATION-20261021-143219.zip`.
-- The embedded C6 v1 Markdown occupies source lines 1771–2201 (431 lines). Its exact CRLF-byte SHA-256 is $bodyRawHash; after CRLF-to-LF normalization its SHA-256 is $bodyLfHash, matching the v1 eport_sha256 recorded in the source's companion manifest.
+- The declared transfer range is lines 1771–2240. Its exact raw-byte range SHA-256 is 697c7f90514260b9ec9e26af835908cd53a6264a162a506d3f4d6b5c6d5c9f8c (45,509 bytes); the range is preserved in the supplemental source-evidence ZIP at `evidence/intake/C6-SOURCE-RECONCILIATION-20261021-143219.zip`.
+- The embedded C6 v1 Markdown occupies source lines 1771–2201 (431 lines). Its exact CRLF-byte SHA-256 is `a6beedee448e6e86adebed5d8f686ec67269b504549509ad90dc30c684963255`; after CRLF-to-LF normalization its SHA-256 is `189026e10687ee4412a3a6be2fdc1fe43b1dfbc360c3fc48ce8285338fcbf049`, matching the v1 `report_sha256` recorded in the source companion manifest.
 - The canonical v4 design is derived from the reconciled v3 candidate; v3 is a later revision, not a byte-identical copy of the v1 extraction. The source establishes v1 provenance, not byte identity or proof of every v1-to-v3 semantic change. The decision accepts the written design only; unresolved semantic/interface questions remain blockers for implementation and test acceptance. The original source TXT and raw v1 extraction are preserved in the supplemental ZIP.
 
 The declared range 1771–2240 contains the C6 v1 Markdown plus the beginning of its companion manifest; the final unterminated logical line 2241 is outside the declared line range. This boundary is documented rather than silently normalized.
@@ -363,8 +363,8 @@ The companion manifest follows the C6/C2 key set, adds `source_txt_*` fields wit
 9. C1 synthesis v2 does not exist; future packs stay dormant until it is approved (index note 3). This document does not change that.
 10. No external source checked by me for authorization-boundary or fault-injection practice.
 
-## 10. Next validation steps (this candidate has not been accepted; these are the path to acceptance, not a claim)
-1. Source TXT supplied and raw provenance reconciled. This v4 is accepted as a design-only supporting artifact; any future implementation/validation claim still requires the open interface, threshold, semantic, and runtime gates to be resolved with evidence.
+## 10. Next validation steps (implementation remains blocked; these are the path to future implementation, not a claim)
+1. Source TXT supplied and raw provenance reconciled. This v4 is recorded as a canonical design-only supporting artifact; this does not authorize implementation or runtime execution. Any future implementation/validation claim still requires the open interface, threshold, semantic, and runtime gates to be resolved with evidence.
 2. Integration owner reviews this candidate against C2–C5 candidates and applies accepted changes to a review branch only; updates registers once, serially.
 3. Human owner decides the open governance items and approves or rejects each `THRESHOLD NOT SET` gate and baseline method.
 4. Run E-001 (naive checker on synthetic fixtures) and E-004 (traceability on copies) first — neither needs the Wave 4 runtime. Retain Evaluation Records tied to commit and file hashes.
