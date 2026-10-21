@@ -42,7 +42,7 @@ supersedes:
 
 source_count: 1  # external sources re-verified by the author (UTBoost, arXiv:2506.09289). Internal inputs and hashes: section 1.2 of the .md; identifier audit: section 11.
 
-report_sha256: bec4a35d85280a6b2ad7fd6c113727d6773809491880fffb0688c906081a4453
+report_sha256: dab7060ec1042a9ee09749fc5303b663dea961ab349e6919ede9bc52ee5cbc68
   # sha256 of the exact bytes of C6-FUTURE-EVALUATION-CAPABILITY-PACKS.md (401 lines, LF only, no CR bytes),
   # computed with sha256sum and independently with Python hashlib after the final edit; newlines not normalized.
   # The .md carries only the literal line report_sha256: recorded_in_manifest. Recompute if the .md changes.

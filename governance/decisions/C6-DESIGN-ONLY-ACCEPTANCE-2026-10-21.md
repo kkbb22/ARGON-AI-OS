@@ -3,9 +3,9 @@
 - Decision date: 2026-10-21
 - Decision status: **Accepted as a canonical design/supporting artifact only** (this change is submitted through a review PR; its repository effect occurs on merge).
 - Authority basis: the project owner explicitly delegated selection of the safest quality/durability/security-oriented project decisions in the project conversation. This record implements that delegation narrowly; it does not claim a C7 independent audit or runtime approval.
-- Source reconciliation: raw source TXT SHA-256 $ExpectedSourceHash; extracted C6 v1 LF-normalized SHA-256 $ExpectedV1LFHash; reconciled intake candidate pre-promotion LF-normalized SHA-256 $candidateHash.
-- Canonical v4 pack LF-normalized SHA-256 $mdCatalogHash.
-- Canonical v4 manifest LF-normalized SHA-256 $manifestCatalogHash.
+- Source reconciliation: raw source TXT SHA-256 a542be977e7af20dfe90be08585b1a05e094351805a0d8c9dcb22301b2d0039a; extracted C6 v1 LF-normalized SHA-256 189026e10687ee4412a3a6be2fdc1fe43b1dfbc360c3fc48ce8285338fcbf049; reconciled intake candidate pre-promotion LF-normalized SHA-256 6c399abbdc0b890ba0a3d8dce5be36ee7dc2d21eee61b73492fd255bfdc1de37.
+- Canonical v4 pack LF-normalized SHA-256 dab7060ec1042a9ee09749fc5303b663dea961ab349e6919ede9bc52ee5cbc68.
+- Canonical v4 manifest LF-normalized SHA-256 f9ed1ad6c78ab7f5b737ec2a780ea9ae3d351b949dbb378904c5dc837fc7c27e.
 - Source-reconciliation evidence: `evidence/intake/C6-SOURCE-RECONCILIATION-20261021-143219.zip`; prior intake/source PRs: #3 and #4.
 
 ## Decision
