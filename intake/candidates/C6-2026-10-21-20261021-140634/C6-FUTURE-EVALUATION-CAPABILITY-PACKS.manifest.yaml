@@ -37,17 +37,30 @@ supersedes:
 
 source_count: 1  # external sources re-verified by the author (UTBoost, arXiv:2506.09289). Internal inputs and hashes: section 1.2 of the .md; identifier audit: section 11.
 
-report_sha256: 213f25a5222a5bfa8a2c6e32df27b565403fcf4ea34d9be5af01d4086d2f020e
+report_sha256: 6c399abbdc0b890ba0a3d8dce5be36ee7dc2d21eee61b73492fd255bfdc1de37
   # sha256 of the exact bytes of C6-FUTURE-EVALUATION-CAPABILITY-PACKS.md (401 lines, LF only, no CR bytes),
   # computed with sha256sum and independently with Python hashlib after the final edit; newlines not normalized.
   # The .md carries only the literal line report_sha256: recorded_in_manifest. Recompute if the .md changes.
 
-source_txt:   # SEPARATE from the artifact hash above; values are DECLARED by the prompt pack and UNVERIFIED (file not provided)
+source_txt:   # Source container and the earlier C6 v1 Markdown extraction have now been byte/hash cross-checked
   filename: "c2-c6(1).TXT"
   declared_sha256: a542be977e7af20dfe90be08585b1a05e094351805a0d8c9dcb22301b2d0039a
   declared_line_range: "1771-2240"
-  available_to_author: false
-  raw_extraction_preserved: false  # blocked: source not provided
+  available_to_author: true
+  raw_extraction_preserved: true  # exact source TXT and raw C6 v1 Markdown are preserved in the supplemental evidence ZIP
+  observed_sha256: a542be977e7af20dfe90be08585b1a05e094351805a0d8c9dcb22301b2d0039a
+  observed_byte_length: 221902
+  observed_crlf_newline_count: 2240
+  observed_logical_line_count: 2241  # final logical line has no terminator
+  exact_declared_range_sha256: 697c7f90514260b9ec9e26af835908cd53a6264a162a506d3f4d6b5c6d5c9f8c
+  extracted_c6_v1_markdown_line_range: "1771-2201"
+  extracted_c6_v1_markdown_line_count: 431
+  extracted_c6_v1_markdown_raw_sha256: a6beedee448e6e86adebed5d8f686ec67269b504549509ad90dc30c684963255
+  extracted_c6_v1_markdown_lf_normalized_sha256: 189026e10687ee4412a3a6be2fdc1fe43b1dfbc360c3fc48ce8285338fcbf049
+  extracted_c6_v1_markdown_lf_sha256_matches_v1_manifest: true
+  current_v3_candidate_sha256_after_status_update: 6c399abbdc0b890ba0a3d8dce5be36ee7dc2d21eee61b73492fd255bfdc1de37
+  current_v3_candidate_byte_identical_to_v1_extraction: false
+  reconciliation_evidence_zip: "evidence/intake/C6-SOURCE-RECONCILIATION-20261021-143219.zip"
 
 input_integrity_recheck:
   repository: https://github.com/kkbb22/ARGON-AI-OS.git
@@ -60,4 +73,4 @@ input_integrity_recheck:
   c2_c5_future_pack_hashes_match_their_manifests: true
   consumed_identifiers_missing_from_sources: 0   # section 11 audit
   inputs_unchanged_since_first_read: true        # read-only clone, git status clean
-  inputs_not_supplied: ["c2-c6(1).TXT", "local D: drive files", "normalized Plan/Act mutation matrix (not in repository tree)"]
+  inputs_not_supplied: ["local D: drive files", "normalized Plan/Act mutation matrix (not in repository tree)"]

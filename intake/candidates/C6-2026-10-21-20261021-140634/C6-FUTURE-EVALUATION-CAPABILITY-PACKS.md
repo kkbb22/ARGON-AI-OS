@@ -77,12 +77,15 @@ All repository copies of C1–C6, C7-FFA-003, and the two Wave 3.5 files are **b
 
 **Read depth.** C6 canonical engine, the capability index, the three planning registers, and `STATUS.md` read in full. The four existing future packs read by headers, catalogs, test-vector and acceptance sections, and every line mentioning C6. C1–C5 research read at the sections bearing on evaluation (earlier in this engagement; C2 §RP-13/14/precedence, C3 patterns P2/P8–P10 and E3–E6, C4 Pattern F and Experiments, C5 E1–E8). The inspected files total 6,656 lines (C1–C6 research, four future packs, index, registers, STATUS, three docs, C7-FFA-003, three Wave 3.5 files); not every line was read; statements below are limited to what was read or searched.
 
-### 1.3 The source TXT container — missing
-The prompt pack names `c2-c6(1).TXT` (2,240 lines, SHA-256 `a542be977e7af20dfe90be08585b1a05e094351805a0d8c9dcb22301b2d0039a`) and the range **lines 1771–2240** as the C6 extraction. **That file was not provided in this environment.** Consequences, stated rather than worked around:
-- I could not preserve a raw extraction, verify the TXT hash, or verify the range. The TXT SHA and range are recorded in the manifest as **declared by the prompt pack, unverified**.
-- Circumstantial only: 1771–2240 is 470 lines; my previous draft (pack 431 lines + manifest 38 lines) is 469. That is consistent with the range holding that prior draft, but it is **not evidence of identity** and I make no claim from it.
-- What is preserved instead: the previous draft, byte-for-byte, in `prior-draft-preserved/` (hash in the change report).
+### 1.3 The source TXT container — received and cross-checked
 
+The exact source container historically referenced as c2-c6(1).TXT was supplied locally as c2-c6.TXT; its raw-byte SHA-256 independently recomputes to $ExpectedSourceHash (221,902 bytes). The file contains 2,240 CRLF line terminators and 2,241 logical lines because the final logical line is not terminated by a newline.
+
+- The declared transfer range is lines 1771–2240. Its exact raw-byte range SHA-256 is $rangeHash (45,509 bytes); the range is preserved in the supplemental source-evidence ZIP at `evidence/intake/C6-SOURCE-RECONCILIATION-20261021-143219.zip`.
+- The embedded C6 v1 Markdown occupies source lines 1771–2201 (431 lines). Its exact CRLF-byte SHA-256 is $bodyRawHash; after CRLF-to-LF normalization its SHA-256 is $bodyLfHash, matching the v1 eport_sha256 recorded in the source's companion manifest.
+- The PR candidate is a later v3 revision, not a byte-identical copy of the v1 extraction. The v1 source establishes provenance for the prior draft; it does not by itself prove every v1-to-v3 content change correct. The original source TXT and raw v1 extraction are preserved in the supplemental ZIP.
+
+The declared range 1771–2240 contains the C6 v1 Markdown plus the beginning of its companion manifest; the final unterminated logical line 2241 is outside the declared line range. This boundary is documented rather than silently normalized.
 ---
 
 ## 2. Corrected stale assumptions
@@ -342,12 +345,12 @@ Mutant **M-005a**: insert a gate-bypassing "cheap" configuration (05 must FAIL i
 | C5 future-pack manifest | shorter key set; adds `additive_to`, `inputs_hash_checked_match`, `tests_executed`; bare hash |
 | C3, C4 future packs | no separate manifest (embedded header; C3 states it deliberately omits the hash) |
 | C3 research manifest | outlier: `report_sha256: recorded_in_manifest` plus `report_sha256_value` |
-The companion manifest follows the C6/C2 key set, adds `source_txt_*` fields (declared, unverified) and `input_integrity_recheck`, and keeps the TXT hash and the artifact hash in **separate** fields.
+The companion manifest follows the C6/C2 key set, adds `source_txt_*` fields with separate raw-container and extracted-body verification hashes and `input_integrity_recheck`, and keeps the TXT hash and the artifact hash in **separate** fields.
 
 ---
 
 ## 9. Open questions and missing inputs
-1. **Source TXT container** (`c2-c6(1).TXT`) — not provided; raw extraction, TXT hash, and line-range verification are `BLOCKED`.
+1. **Source TXT container** (`c2-c6(1).TXT`) — received and raw SHA-256 verified; C6 v1 Markdown lines 1771–2201 normalize to the v1 manifest hash. The current v3 candidate is a later derivative; detailed v1-to-v3 change review remains required.
 2. Canonical definitions of `source_status` / `inert` (only in a superseded C3 file); the "knowledge-model" artifact; Context Packet and Repository Snapshot schemas.
 3. C2's precedence/classification feed in a **canonical** artifact; RP-13 mechanisms and the human decision whether to build binding (OQ-01, DEP-09).
 4. The brief's "normalized Plan/Act mutation test matrix" — not in the repository tree; the 5-vs-6 vector taxonomy (OQ-03) is `OPEN FOR C1`.
@@ -359,7 +362,7 @@ The companion manifest follows the C6/C2 key set, adds `source_txt_*` fields (de
 10. No external source checked by me for authorization-boundary or fault-injection practice.
 
 ## 10. Next validation steps (this candidate has not been accepted; these are the path to acceptance, not a claim)
-1. Provide the source TXT, then re-run extraction reconciliation against lines 1771–2240.
+1. Source TXT supplied; raw hash and source extraction cross-check now pass. Review and document semantic changes from the v1 source to the current v3 candidate before acceptance.
 2. Integration owner reviews this candidate against C2–C5 candidates and applies accepted changes to a review branch only; updates registers once, serially.
 3. Human owner decides the open governance items and approves or rejects each `THRESHOLD NOT SET` gate and baseline method.
 4. Run E-001 (naive checker on synthetic fixtures) and E-004 (traceability on copies) first — neither needs the Wave 4 runtime. Retain Evaluation Records tied to commit and file hashes.
@@ -389,7 +392,7 @@ Identifiers cited but **not** in this audit (leads only, superseded sources): C2
 | Repository `main` commit | `71a3fa6d1fb1eed0e694886263710d4020e10341` |
 | Prompt pack | `12b8a45a32602429bb9b23b5bbfaacc3096a6c1c1aee9ed2b93191c592473ab5` |
 | Previous staged candidate (v2, superseded by this file) | `3dd7ca206c74a85f9be0273f2e2a3ed99f19dcf69d1d27896e5765f92c26017b` |
-| Source TXT `c2-c6(1).TXT` (declared, **unverified**; file not provided) | `a542be977e7af20dfe90be08585b1a05e094351805a0d8c9dcb22301b2d0039a` |
+| Source TXT `c2-c6(1).TXT` (raw bytes verified; C6 v1 Markdown LF-normalized digest matches its companion manifest) | `a542be977e7af20dfe90be08585b1a05e094351805a0d8c9dcb22301b2d0039a` |
 | This file | recorded only in the companion manifest (no self-referential hash) |
 Input-file hashes: §1.2. The canonical C6 engine hash is `a0d762ad472f0e5fb6a891495a943ca808ac642ab5b7d3b9eab42fd0e237946a`.
 
