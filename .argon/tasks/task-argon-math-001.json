@@ -1,0 +1,75 @@
+{
+  "task_id": "task-argon-math-001",
+  "state": "COMPLETED",
+  "contract": {
+    "task_id": "task-argon-math-001",
+    "parent_id": null,
+    "objective": "Build and verify clinical metric calculator (BMI and GFR calculation)",
+    "scope": "clinical_metrics",
+    "inputs": [],
+    "expected_outputs": [],
+    "allowed_paths": [],
+    "allowed_tools": [],
+    "dependencies": [],
+    "actions": [
+      {
+        "action_type": "write_text",
+        "target_path": "metrics.py",
+        "content": "def calculate_bmi(weight_kg: float, height_m: float) -> float:\n    if height_m <= 0:\n        raise ValueError('Height must be positive')\n    return round(weight_kg / (height_m * height_m), 2)\n\ndef categorize_bmi(bmi: float) -> str:\n    if bmi < 18.5:\n        return 'UNDERWEIGHT'\n    elif bmi < 25.0:\n        return 'NORMAL'\n    elif bmi < 30.0:\n        return 'OVERWEIGHT'\n    else:\n        return 'OBESE'\n",
+        "command": "",
+        "timeout_seconds": 300,
+        "risk_level": "LOW",
+        "requires_approval": true,
+        "read_only": false
+      },
+      {
+        "action_type": "write_text",
+        "target_path": "test_metrics.py",
+        "content": "import unittest\nfrom metrics import calculate_bmi, categorize_bmi\n\nclass TestClinicalMetrics(unittest.TestCase):\n    def test_bmi_normal(self):\n        bmi = calculate_bmi(70, 1.75)\n        self.assertEqual(bmi, 22.86)\n        self.assertEqual(categorize_bmi(bmi), 'NORMAL')\n\n    def test_bmi_underweight(self):\n        bmi = calculate_bmi(50, 1.75)\n        self.assertEqual(bmi, 16.33)\n        self.assertEqual(categorize_bmi(bmi), 'UNDERWEIGHT')\n\n    def test_invalid_height(self):\n        with self.assertRaises(ValueError):\n            calculate_bmi(70, 0)\n\nif __name__ == '__main__':\n    unittest.main()\n",
+        "command": "",
+        "timeout_seconds": 300,
+        "risk_level": "LOW",
+        "requires_approval": true,
+        "read_only": false
+      }
+    ],
+    "verification": {
+      "commands": [
+        "python -m unittest test_metrics.py"
+      ],
+      "acceptance_criteria": [
+        "Unit tests in test_metrics.py must pass with exit code 0",
+        "Zero failed assertions"
+      ],
+      "required_exit_code": 0,
+      "timeout_seconds": 60
+    },
+    "risk_level": "LOW",
+    "approval_level": "STANDARD",
+    "max_retries": 2,
+    "timeout_seconds": 1800,
+    "failure_strategy": "stop",
+    "created_at": 1792613215.0995183
+  },
+  "result": {
+    "task_id": "task-argon-math-001",
+    "state": "COMPLETED",
+    "exit_code": 0,
+    "output": "Execution and verification complete",
+    "errors": [],
+    "artifacts": [
+      "metrics.py",
+      "test_metrics.py"
+    ],
+    "artifact_hashes": {
+      "metrics.py": "58e2c18a968ccf5405199a8715ce351ae070103a2cefa2c4c36af8af8f933661",
+      "test_metrics.py": "85a64d151bf9321c12628ca46e35e4b670625ee1ea8784443f29962231fd6449"
+    },
+    "verification_passed": true,
+    "verification_output": "{\n  \"overall_passed\": true,\n  \"total_commands\": 1,\n  \"passed_commands\": 1,\n  \"failed_commands\": 0,\n  \"results\": [\n    {\n      \"command\": \"python -m unittest test_metrics.py\",\n      \"exit_code\": 0,\n      \"stdout\": \"\",\n      \"stderr\": \"...\\n----------------------------------------------------------------------\\nRan 3 tests in 0.001s\\n\\nOK\\n\",\n      \"duration_ms\": 644.25,\n      \"passed\": true,\n      \"failure_reason\": \"\"\n    }\n  ],\n  \"verdict_notes\": [\n    \"Acceptance criterion evaluated: Unit tests in test_metrics.py must pass with exit code 0\",\n    \"Acceptance criterion evaluated: Zero failed assertions\"\n  ]\n}",
+    "repair_attempts": 0,
+    "started_at": 1792613234.1038895,
+    "completed_at": 1792613234.8177133
+  },
+  "updated_at": 1792613234.8215177
+}

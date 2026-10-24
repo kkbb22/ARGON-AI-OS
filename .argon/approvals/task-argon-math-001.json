@@ -1,0 +1,13 @@
+{
+  "approval_id": "fc30bf3176bd2c4f838ef4c29d930af5",
+  "task_id": "task-argon-math-001",
+  "plan_digest": "d84c90d9d9f346f6ea4e7e95f36a6e2de3fad024af45bb39aec6164f445b66b8",
+  "nonce": "bf2ed4e8a3b4ef38",
+  "approver": "operator",
+  "issued_at": 1792613226.0861242,
+  "expires_at": 1792613526.0860965,
+  "consumed": true,
+  "consumed_at": 1792613234.0949876,
+  "scope": "clinical_metrics",
+  "decision": "CONSUMED"
+}

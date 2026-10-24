@@ -1,0 +1,38 @@
+{
+  "task_id": "task-argon-math-001",
+  "objective": "Build and verify clinical metric calculator (BMI and GFR calculation)",
+  "scope": "clinical_metrics",
+  "actions": [
+    {
+      "action_type": "write_text",
+      "target_path": "metrics.py",
+      "content": "def calculate_bmi(weight_kg: float, height_m: float) -> float:\n    if height_m <= 0:\n        raise ValueError('Height must be positive')\n    return round(weight_kg / (height_m * height_m), 2)\n\ndef categorize_bmi(bmi: float) -> str:\n    if bmi < 18.5:\n        return 'UNDERWEIGHT'\n    elif bmi < 25.0:\n        return 'NORMAL'\n    elif bmi < 30.0:\n        return 'OVERWEIGHT'\n    else:\n        return 'OBESE'\n",
+      "risk_level": "LOW",
+      "requires_approval": true,
+      "read_only": false
+    },
+    {
+      "action_type": "write_text",
+      "target_path": "test_metrics.py",
+      "content": "import unittest\nfrom metrics import calculate_bmi, categorize_bmi\n\nclass TestClinicalMetrics(unittest.TestCase):\n    def test_bmi_normal(self):\n        bmi = calculate_bmi(70, 1.75)\n        self.assertEqual(bmi, 22.86)\n        self.assertEqual(categorize_bmi(bmi), 'NORMAL')\n\n    def test_bmi_underweight(self):\n        bmi = calculate_bmi(50, 1.75)\n        self.assertEqual(bmi, 16.33)\n        self.assertEqual(categorize_bmi(bmi), 'UNDERWEIGHT')\n\n    def test_invalid_height(self):\n        with self.assertRaises(ValueError):\n            calculate_bmi(70, 0)\n\nif __name__ == '__main__':\n    unittest.main()\n",
+      "risk_level": "LOW",
+      "requires_approval": true,
+      "read_only": false
+    }
+  ],
+  "verification": {
+    "commands": [
+      "python -m unittest test_metrics.py"
+    ],
+    "acceptance_criteria": [
+      "Unit tests in test_metrics.py must pass with exit code 0",
+      "Zero failed assertions"
+    ],
+    "required_exit_code": 0,
+    "timeout_seconds": 60
+  },
+  "risk_level": "LOW",
+  "approval_level": "STANDARD",
+  "max_retries": 2,
+  "failure_strategy": "stop"
+}

@@ -1,0 +1,10 @@
+﻿{
+  "task": "Create a safe demo file",
+  "actions": [
+    {
+      "type": "write_text",
+      "path": "hello.txt",
+      "content": "ARGON AI-OS guarded runtime is running."
+    }
+  ]
+}
