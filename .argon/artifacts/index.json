@@ -1,0 +1,18 @@
+{
+  "metrics.py": {
+    "path": "metrics.py",
+    "sha256": "58e2c18a968ccf5405199a8715ce351ae070103a2cefa2c4c36af8af8f933661",
+    "size_bytes": 407,
+    "created_at": 1792613234.1108503,
+    "task_id": "task-argon-math-001",
+    "artifact_type": "source"
+  },
+  "test_metrics.py": {
+    "path": "test_metrics.py",
+    "sha256": "85a64d151bf9321c12628ca46e35e4b670625ee1ea8784443f29962231fd6449",
+    "size_bytes": 609,
+    "created_at": 1792613234.1467912,
+    "task_id": "task-argon-math-001",
+    "artifact_type": "source"
+  }
+}
